@@ -21,6 +21,7 @@
 
 
 
+
 <meta property="og:title" content="COVID-19 Vaccines - Penn Medicine"></meta>
 <meta property="og:description" content="COVID Vaccine information "></meta>
 <meta property="og:url" content="https://www.pennmedicine.org/coronavirus/vaccine"></meta>
@@ -33,7 +34,15 @@
 <script src="/Assets/PennMedicine/built/js/vendor/iesupport.js"></script>
 <![endif]-->
 
+
+<link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.7219/css/CoveoFullSearch.css"/>
+<script class="coveo-script" src="https://static.cloud.coveo.com/searchui/v2.10082/js/CoveoJsSearch.js"></script>
+
+
 <script src="/Assets/PennMedicine/built/js/modernizr.js"></script>
+
+  
+  
 
 <link rel="canonical" href="https://www.pennmedicine.org/coronavirus/vaccine" />
 
@@ -607,6 +616,103 @@ a.fad-result__text-link[href*="urgent-care-south-philadelphia"]:after {
     margin-bottom: 1rem;
 }
 */
+
+/* New site search styles (Coveo) */
+
+/* making default font larger  (which was 15px) */
+.CoveoSearchInterface {
+  font-size: 16px;
+
+}
+/* hiding list of selected facets that appeared at bottom of filter box */
+.coveo-dynamic-facet-values li.coveo-dynamic-facet-collapsed-values {
+    display: none;
+}
+/* making default font for result titles larger  (which was 15px) */
+.CoveoResultLink, 
+a.CoveoResultLink, 
+.CoveoResult a.CoveoResultLink {
+    font-size: 22px;
+    color:  #3277B8;
+}
+a.CoveoResultLink:hover, 
+.CoveoResult a.CoveoResultLink:hover {
+    color: #44A2FF;
+}
+/* making result URL font smaller that default */
+.coveo-printable-uri-part a.CoveoResultLink {
+    font-size: 13px;
+}
+/* the result type mini-heading that appears at top of individual results */
+.coveo-result-cell[role='heading'] .CoveoFieldValue {
+    padding: .25rem .5rem;
+    background-color: rgba(165, 159, 96, .1);
+    display: inline-block;
+    font-size: 14px;
+    color: #333;
+}
+.coveo-result-cell[role='heading'] .CoveoFieldValue .coveo-clickable {
+    color: #333;
+}
+.coveo-result-cell[role='heading'] .CoveoFieldValue .coveo-selected {
+    font-weight: normal;
+}
+/* filter buttons that appear at top of results list */
+li.coveo-dynamic-facet-breadcrumb-value-list-item {
+    display: inline-block;
+    background-color: rgba(255,255,255, .9);
+    border-radius: 10px;
+    padding: .25rem 0 .25rem .75rem;
+    margin-right: 1rem;
+    margin-bottom: .75rem;
+}
+.coveo-dynamic-facet-breadcrumb-value, 
+.coveo-dynamic-facet-breadcrumb-collapse {
+    margin-right: 10px;
+}
+.coveo-dynamic-facet-breadcrumb-value-clear {
+    margin-left: 10px;
+}
+.CoveoDynamicFacet {
+    padding: .5rem 1rem;
+}
+div#coveo-result-list1 {
+    outline-color: transparent;
+}
+.CoveoFieldValue[data-field*="@fteaser"] {
+    line-height: 140%;
+}
+.coveo-search-button-svg {
+    color: #fff;
+}
+.CoveoSearchbox .CoveoSearchButton {
+    background-color: #549ed4;
+}
+/* fade out search box in masthead */
+form[action*="site-search"] .l-header__search,
+form[action*="site-search"] .l-header__search-toggle {
+    opacity: 0.3;
+}
+@media (max-width: 480px) {
+    .CoveoSearchInterface .CoveoSearchbox {
+        margin-right: 0;
+    }
+}
+.CoveoSearchInterface .coveo-search-section {
+    max-width: 825px;
+    margin: 30px 0 30px auto;
+}
+form[action*="/site-search"] #search {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-primary .CoveoSearchbox .magic-box, 
+.global-search-overlay .CoveoSearchbox .magic-box, 
+.l-header .CoveoSearchbox .magic-box, 
+.nav-wrap .CoveoSearchbox .magic-box {
+    border: 1px solid #aaa;
+}
 </style>
 
 
@@ -647,14 +753,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <a href="/" class="l-header__logo ir" title="Go to the home page">Penn Medicine</a>
 
-        <div class="l-header__toggles cf">
-            <button type="button" class="l-header__search-toggle icon-search-white-w-sm u-hidden-mq-large js-global-search-toggle"><span class="u-visuallyhidden">Expand Search</span></button>            
+        <div class="l-header__toggles u-cf">
+            <button type="button" class="l-header__search-toggle icon-search-white-w-sm u-hidden-mq-large js-global-search-toggle"><span class="u-visuallyhidden">Expand Search</span></button>
             <a href="#" class="l-header__nav-toggle u-hidden-mq-large js-nav-toggle">Menu</a>
+            <div class="l-header__search">
+                <div class="CoveoAnalytics" data-search-hub="PennMedicineMainSiteSearch"></div>
+                <div>
+                    <div class="CoveoSearchbox"></div>
+                </div>
+            </div>
         </div>
 
         <a href="tel:800-789-7366" class="l-header__phone">800-789-7366</a>
 
-        
 
     </div>
 </header>
@@ -910,8 +1021,7 @@ display: none;
         </div>
 
         
-
- <div class="nav-wrap js-nav-wrap">
+<div class="nav-wrap js-nav-wrap">
     <div class="l-contain">
         
 
@@ -1336,7 +1446,6 @@ display: none;
     </ul>
 </nav>
 
-
         
 
 <nav class="nav-utility js-nav-utility">
@@ -1368,17 +1477,10 @@ display: none;
             
     </ul>
 </nav>
-
-        <div class="l-header__search js-global-search" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ctl10_ctl02_btnSearch&#39;)">
-	
-    <input name="ctl10$ctl02$txtSearch" type="text" class="l-header__search-input js-search-input js-typeahead-header" placeholder="Search Penn Medicine..." />
-    <input type="submit" name="ctl10$ctl02$btnSearch" value="Submit" class="input-submit l-header__search-submit icon-search-white-w ir" />
-    <a href="#" class="search__clear icon-clear js-search-clear"></a>
-
-</div>
-
+        
     </div>
 </div>
+
 
         
 
@@ -1452,8 +1554,8 @@ display: none;
     jQuery = jQuery || jQuerySMF;
     $ = jQuery || jQuerySMF;
 </script>
-<script src="/Assets/PennMedicine/built/bower_components/typeahead.js/dist/bloodhound.min.js"></script>
-<script src="/Assets/PennMedicine/built/bower_components/typeahead.js/dist/typeahead.jquery.min.js"></script>
+
+
 <script src="/Assets/PennMedicine/built/js/main.js"></script>
 
 
@@ -1479,6 +1581,7 @@ function __doPostBack(eventTarget, eventArgument) {
 
 
 <script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZGArpmFRcvlz0n8nBAbOfvSd6wEUuddhtbeTWcx1L35VYICa9A2&amp;t=637453888939909757" type="text/javascript"></script>
-</form>
+
+<script type="text/javascript">document.addEventListener("DOMContentLoaded", function() {const mainPageRoot = document.getElementById("search");const searchBoxRoot = document.getElementById("searchbox");Coveo.SearchEndpoint.configureCloudV2Endpoint("pennmedicine","xx9484b059-2dd7-4b29-878a-61d68bf25eeb");if (mainPageRoot){Coveo.init(mainPageRoot, {externalComponents: [searchBoxRoot]});}else{Coveo.initSearchbox(searchBoxRoot,"https://www.pennmedicine.org/penn-medicine/site-search");}});</script></form>
 </body>
 </html>
