@@ -571,7 +571,7 @@ h2.h3, .rtf h2.h3 {
 /* Short-term fixes for backend dev problems */
 
 a[class*="link-more"]:empty {
-	display: none !important;
+    display: none !important;
 }
 
 /* Temp hide of search box -- NOT IN USE
@@ -712,6 +712,9 @@ form[action*="/site-search"] #search {
 .l-header .CoveoSearchbox .magic-box, 
 .nav-wrap .CoveoSearchbox .magic-box {
     border: 1px solid #aaa;
+}
+#searchbox .CoveoSearchbox .magic-box .magic-box-suggestions {
+    display: none !important;
 }
 </style>
 
