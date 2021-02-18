@@ -538,14 +538,22 @@ display:none;
 */
 
 /* Hiding FAD CTAs for Radiologists */
-.fad-result__ctas a[href="tel:2156624000"],
-.fad-result__ctas a[href="tel:2156628000"],
-.fad-result__ctas a[href="tel:2158293000"],
-.fad-result__ctas a[href="tel:6104315000"],
-.fad-result__ctas a[href="tel:6109022000"] {
+/* Profile pages */
+form[action*="/providers"] .fad-profile__lead a[href="tel:2156624000"],
+form[action*="/providers"] .fad-profile__lead a[href="tel:2156628000"],
+form[action*="/providers"] .fad-profile__lead a[href="tel:2158293000"],
+form[action*="/providers"] .fad-profile__lead a[href="tel:6104315000"],
+form[action*="/providers"] .fad-profile__lead a[href="tel:6109022000"] {
     display: none;
     }
-
+/* Results pages */
+form[action*="/providers"] .fad-result__inner a[href="tel:2156624000"],
+form[action*="/providers"] .fad-result__inner a[href="tel:2156628000"],
+form[action*="/providers"] .fad-result__inner a[href="tel:2158293000"],
+form[action*="/providers"] .fad-result__inner a[href="tel:6104315000"],
+form[action*="/providers"] .fad-result__inner a[href="tel:6109022000"] {
+    display: none;
+    }
 /*
 |- - END - FAD ReDesign Styles - - - - |
 */
@@ -595,10 +603,10 @@ display: none;
     background-color: transparent;
 }
 
-/* Snow emergency overrides 
+/* Snow emergency overrides */
 
 form[action*="/practices/urgent-care-south-philadelphia"] div.fad-result__times:before {
-    content: "Opening today at 10:00AM due to the snow emergency";
+    content: "Closing today at 4:00PM due to inclement weather";
     display: block;
     padding: .5rem 1rem;
     background-color: #fff;
@@ -607,7 +615,7 @@ form[action*="/practices/urgent-care-south-philadelphia"] div.fad-result__times:
     margin-bottom: 1rem;
 }
 a.fad-result__text-link[href*="urgent-care-south-philadelphia"]:after {
-    content: "Opening today at 10:00AM due to the snow emergency";
+    content: "Closing today at 4:00PM due to inclement weather";
     display: block;
     padding: .5rem 1rem;
     background-color: #fff;
@@ -615,7 +623,7 @@ a.fad-result__text-link[href*="urgent-care-south-philadelphia"]:after {
     color: #C00;
     margin-bottom: 1rem;
 }
-*/
+
 
 /* New site search styles (Coveo) */
 
