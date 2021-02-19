@@ -603,34 +603,13 @@ display: none;
     background-color: transparent;
 }
 
-/* Snow emergency overrides */
-
-form[action*="/practices/urgent-care-south-philadelphia"] div.fad-result__times:before {
-    content: "Closing today at 4:00PM due to inclement weather";
-    display: block;
-    padding: .5rem 1rem;
-    background-color: #fff;
-    border-left: 3px solid red;
-    color: #C00;
-    margin-bottom: 1rem;
-}
-a.fad-result__text-link[href*="urgent-care-south-philadelphia"]:after {
-    content: "Closing today at 4:00PM due to inclement weather";
-    display: block;
-    padding: .5rem 1rem;
-    background-color: #fff;
-    border-left: 3px solid red;
-    color: #C00;
-    margin-bottom: 1rem;
-}
-
-
-/* New site search styles (Coveo) */
+/* --------------------------------------------
+New site search styles (Coveo) 
+-------------------------------------------- */ 
 
 /* making default font larger  (which was 15px) */
 .CoveoSearchInterface {
   font-size: 16px;
-
 }
 /* hiding list of selected facets that appeared at bottom of filter box */
 .coveo-dynamic-facet-values li.coveo-dynamic-facet-collapsed-values {
@@ -724,6 +703,30 @@ form[action*="/site-search"] #search {
 #searchbox .CoveoSearchbox .magic-box .magic-box-suggestions {
     display: none !important;
 }
+/* --------------------------------------------
+END - New site search styles (Coveo) 
+-------------------------------------------- */ 
+
+/* Snow emergency overrides
+form[action*="/practices/urgent-care-south-philadelphia"] div.fad-result__times:before {
+    content: "Closing today at 4:00PM due to inclement weather";
+    display: block;
+    padding: .5rem 1rem;
+    background-color: #fff;
+    border-left: 3px solid red;
+    color: #C00;
+    margin-bottom: 1rem;
+}
+a.fad-result__text-link[href*="urgent-care-south-philadelphia"]:after {
+    content: "Closing today at 4:00PM due to inclement weather";
+    display: block;
+    padding: .5rem 1rem;
+    background-color: #fff;
+    border-left: 3px solid red;
+    color: #C00;
+    margin-bottom: 1rem;
+}
+*/
 </style>
 
 
