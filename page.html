@@ -607,102 +607,34 @@ display: none;
 New site search styles (Coveo) 
 -------------------------------------------- */ 
 
-/* making default font larger  (which was 15px) */
-.CoveoSearchInterface {
-  font-size: 16px;
-}
-/* hiding list of selected facets that appeared at bottom of filter box */
-.coveo-dynamic-facet-values li.coveo-dynamic-facet-collapsed-values {
-    display: none;
-}
-/* making default font for result titles larger  (which was 15px) */
-.CoveoResultLink, 
-a.CoveoResultLink, 
-.CoveoResult a.CoveoResultLink {
-    font-size: 22px;
-    color:  #3277B8;
-}
-a.CoveoResultLink:hover, 
-.CoveoResult a.CoveoResultLink:hover {
-    color: #44A2FF;
-}
-/* making result URL font smaller that default */
-.coveo-printable-uri-part a.CoveoResultLink {
-    font-size: 13px;
-}
-/* the result type mini-heading that appears at top of individual results */
-.coveo-result-cell[role='heading'] .CoveoFieldValue {
-    padding: .25rem .5rem;
-    background-color: rgba(165, 159, 96, .1);
-    display: inline-block;
-    font-size: 14px;
-    color: #333;
-}
-.coveo-result-cell[role='heading'] .CoveoFieldValue .coveo-clickable {
-    color: #333;
-}
-.coveo-result-cell[role='heading'] .CoveoFieldValue .coveo-selected {
-    font-weight: normal;
-}
-/* filter buttons that appear at top of results list */
-li.coveo-dynamic-facet-breadcrumb-value-list-item {
-    display: inline-block;
-    background-color: rgba(255,255,255, .9);
-    border-radius: 10px;
-    padding: .25rem 0 .25rem .75rem;
-    margin-right: 1rem;
-    margin-bottom: .75rem;
-}
-.coveo-dynamic-facet-breadcrumb-value, 
-.coveo-dynamic-facet-breadcrumb-collapse {
-    margin-right: 10px;
-}
-.coveo-dynamic-facet-breadcrumb-value-clear {
-    margin-left: 10px;
-}
-.CoveoDynamicFacet {
-    padding: .5rem 1rem;
-}
-div#coveo-result-list1 {
-    outline-color: transparent;
-}
-.CoveoFieldValue[data-field*="@fteaser"] {
-    line-height: 140%;
-}
-.coveo-search-button-svg {
-    color: #fff;
-}
-.CoveoSearchbox .CoveoSearchButton {
-    background-color: #549ed4;
-}
-/* fade out search box in masthead */
-form[action*="site-search"] .l-header__search,
-form[action*="site-search"] .l-header__search-toggle {
-    opacity: 0.3;
-}
-@media (max-width: 480px) {
-    .CoveoSearchInterface .CoveoSearchbox {
-        margin-right: 0;
-    }
-}
-.CoveoSearchInterface .coveo-search-section {
-    max-width: 825px;
-    margin: 30px 0 30px auto;
-}
-form[action*="/site-search"] #search {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
+/* darken input border */
 .content-primary .CoveoSearchbox .magic-box, 
 .global-search-overlay .CoveoSearchbox .magic-box, 
 .l-header .CoveoSearchbox .magic-box, 
 .nav-wrap .CoveoSearchbox .magic-box {
     border: 1px solid #aaa;
 }
+/* make submit button icon white */
+.coveo-search-button-svg {
+    color: #fff;
+}
+/* make submit button background blue */
+.CoveoSearchbox .CoveoSearchButton {
+    background-color: #549ed4;
+}
+/* hide type-ahead suggestions */
 #searchbox .CoveoSearchbox .magic-box .magic-box-suggestions {
     display: none !important;
 }
+/* get rid of right margin on search box in mobile */
+@media (max-width: 480px) {
+    .CoveoSearchInterface .CoveoSearchbox {
+        margin-right: 0;
+    }
+}
+
+/* - - END gloabal search box styles - - */
+
 /* --------------------------------------------
 END - New site search styles (Coveo) 
 -------------------------------------------- */ 
