@@ -602,6 +602,10 @@ display: none;
     border: none;
     background-color: transparent;
 }
+/* allow email addresses to break into multiple lines */
+a[href*="mailto:"] {
+overflow-wrap: anywhere;
+}
 
 /* --------------------------------------------
 New site search styles (Coveo) 
