@@ -173,88 +173,85 @@ div.pm-blog-cta a:hover {
     color: #ffffff;
 }
 @media screen and (max-width: 675px) {
-div.pm-blog-cta a {
-   width:100%;
-    }
+    div.pm-blog-cta a {
+       width:100%;
+        }
 }
-/* Used for IBD/Tower alert only */
-.alert__item-title {
-    font-weight: normal;
-}
+
 
 /*********** PULL-QUOTES ************/
 
-.pm-pullquote {
-    width: 50%;
-    background-color: #eaeae8;
-    margin: 20px;
-    border-radius: 20px;
-}
-.pm-pullquote-right {float: right;}
-.pm-pullquote-left {float: right;}
+    .pm-pullquote {
+        width: 50%;
+        background-color: #eaeae8;
+        margin: 20px;
+        border-radius: 20px;
+    }
+    .pm-pullquote-right {float: right;}
+    .pm-pullquote-left {float: right;}
 
-@media screen and (max-width: 675px) {.pm-pullquote {width:100%;margin: 20px 0px;}}
+    @media screen and (max-width: 675px) {.pm-pullquote {width:100%;margin: 20px 0px;}}
 
-.pm-pullquote p {
-    font-size: 1.4em;
-    line-height: 1.35em;
-    font-family: serif;
-    font-weight: normal;
-    font-style: italic;
-    padding: 15px 20px;
-}
-.pm-pullquote span.pm-pullquote-author {
-    display: block;
-    padding: 0px;
-    margin: 0px;
-    text-align: right;
-    font-style: normal;
-}
-.cch-in-page-callout, 
-.pm-in-page-callout {
-    padding-top: 20px !important;
-}
+    .pm-pullquote p {
+        font-size: 1.4em;
+        line-height: 1.35em;
+        font-family: serif;
+        font-weight: normal;
+        font-style: italic;
+        padding: 15px 20px;
+    }
+    .pm-pullquote span.pm-pullquote-author {
+        display: block;
+        padding: 0px;
+        margin: 0px;
+        text-align: right;
+        font-style: normal;
+    }
+    .cch-in-page-callout, 
+    .pm-in-page-callout {
+        padding-top: 20px !important;
+    }
 
 /*********** END PULL-QUOTES ************/
 
 /*********** NEW BRANDING ************/
 
-@media screen and (max-width: 675px) {
-  .rtf h2.brand-camp-title, 
-  h2.brand-camp-title,
-  .brand-camp-title
-  {
-    text-transform: uppercase;
-    font-family: 'proximanova-bold';
-    letter-spacing: .2em;
-    color: #999;
-  }
-  .rtf h2.brand-camp-title .variant, 
-  h2.brand-camp-title .variant,
-  .brand-camp-title .variant
-  {
-    color: #333;
-  }
-}
-  .rtf h2.brand-camp-title, 
-  h2.brand-camp-title,
-  .brand-camp-title
-  {
-    text-transform: uppercase;
-    font-family: 'proximanova-bold';
-    letter-spacing: .2em;
-    color: #999;
-  }
-  .rtf h2.brand-camp-title .variant, 
-  h2.brand-camp-title .variant,
-  .brand-camp-title .variant
-  {
-    color: #333;
-  }
+    @media screen and (max-width: 675px) {
+      .rtf h2.brand-camp-title, 
+      h2.brand-camp-title,
+      .brand-camp-title
+      {
+        text-transform: uppercase;
+        font-family: 'proximanova-bold';
+        letter-spacing: .2em;
+        color: #999;
+      }
+      .rtf h2.brand-camp-title .variant, 
+      h2.brand-camp-title .variant,
+      .brand-camp-title .variant
+      {
+        color: #333;
+      }
+    }
+      .rtf h2.brand-camp-title, 
+      h2.brand-camp-title,
+      .brand-camp-title
+      {
+        text-transform: uppercase;
+        font-family: 'proximanova-bold';
+        letter-spacing: .2em;
+        color: #999;
+      }
+      .rtf h2.brand-camp-title .variant, 
+      h2.brand-camp-title .variant,
+      .brand-camp-title .variant
+      {
+        color: #333;
+      }
 
-.fad-provider-bio__ul--links a.fad-link--pdf  {
-display:none;
-}
+    .fad-provider-bio__ul--links a.fad-link--pdf  {
+    display:none;
+    }
 
 /* -------- BEGIN PERSON PAGES ---------- */
 
@@ -304,53 +301,54 @@ display:none;
          background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTQgMTQiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiPjxwYXRoIGQ9Ik0gMTIgNyBMIDIgNyIgc3Ryb2tlPSIjNjQ1ZDVmIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48L3N2Zz4=);
     }
 /* --------------------------------------- */
+
 /* ---- UNDERLINE PAGE ERROR LINKS  ----- */
 .page-error .page-error__message p a {
     text-decoration: underline;
 }
 /* --------------------------------------- */
+
 /* 
 | - - - - TEMP FAD Overrides - - - - | 
 */
-/* Expertise toggle */
-.fad-rtf a.fad-detail__terms__list--toggle {
-    border: 1px solid #3277B8;
-    padding: .5rem;
-    border-radius: .35rem;
-    background-color: rgba(255,255,255, 1); 
-    display: inline-block;
-    font-weight: bold;
-    text-decoration: none;
-    position: relative;
-    left: 1rem;
-}
-.fad-rtf a.fad-detail__terms__list--toggle.this-is-active:after {
-    content: "[ - ]";
-}
-.fad-rtf a.fad-detail__terms__list--toggle:after {
-    content: "[ + ]";
-    margin-left: 1rem;
-}
+    /* Expertise toggle */
+    .fad-rtf a.fad-detail__terms__list--toggle {
+        border: 1px solid #3277B8;
+        padding: .5rem;
+        border-radius: .35rem;
+        background-color: rgba(255,255,255, 1); 
+        display: inline-block;
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+        left: 1rem;
+    }
+    .fad-rtf a.fad-detail__terms__list--toggle.this-is-active:after {
+        content: "[ - ]";
+    }
+    .fad-rtf a.fad-detail__terms__list--toggle:after {
+        content: "[ + ]";
+        margin-left: 1rem;
+    }
 
 /* DocsASAP CTA - profile */
 
-@media  (max-width: 840px)  {
-    .fad-profile__text .fad-btn--modal.js-epic-btn[href*="//docasap.com"] {
-        display: block;
+    @media  (max-width: 840px)  {
+        .fad-profile__text .fad-btn--modal.js-epic-btn[href*="//docasap.com"] {
+            display: block;
+        }
     }
-}
-@media  (min-width: 839px)  {
-    .fad-profile__text .fad-btn--modal.js-epic-btn[href*="//docasap.com"] {
-        display: none;
+    @media  (min-width: 839px)  {
+        .fad-profile__text .fad-btn--modal.js-epic-btn[href*="//docasap.com"] {
+            display: none;
+        }
     }
-}
 
-@media print {
-  #df { display: none; }
-}
+    @media print {
+      #df { display: none; }
+    }
 
 /* SPECIAL ALERT STYLES */
-
     /* adds hz rule between alerts */
     .alert__item-text.alert-2 {
         border-top: 1px solid #ccc; 
@@ -373,7 +371,6 @@ display:none;
     }
 
 /* Temp hide of missing landing pages */
-
     div.pm-blog-cta a[href*="https://lp.pennmedicine.org/msk/joint-knee-arthritis/"],
     div.pm-blog-cta a[href*="https://lp.pennmedicine.org/cardiac/tavr/"]
      {
@@ -381,11 +378,9 @@ display:none;
     }
 
 /*
-
-|- - - - FAD ReDesign Styles - - - - - |
-
+ - - - - FAD ReDesign Styles - - - - - 
 */
-    /* Begin Added by KVH - 11-05-20 */
+/* Begin Added by KVH - 11-05-20 */
     /* Resize Map in new FAD locations results page */
     .content-primary .fad-gmap {
         height: 30vh;
@@ -406,9 +401,9 @@ display:none;
             right: 0;
         }
     }
-    /* End Added by KVH - 11-05-20 */
+/* End Added by KVH - 11-05-20 */
 
-    /* Begin Added by KVH - 11-09-20 */
+/* Begin Added by KVH - 11-09-20 */
     /* Re-style narrow filters to make prominent on results page */
     .fad-content .fad-narrow-options .fad-btn--pill {
         padding: 10px 40px 10px 24px;
@@ -449,9 +444,7 @@ display:none;
         height: 28px;
         right: 4px;
       }
-
     /* Re-style suggested links to make prominent */
-
     @media (min-width: 676px) {
       .fad-search__suggested-list a {
         display: inline-block;
@@ -479,19 +472,18 @@ display:none;
         padding-right: 10px !important;
       }
     }
-    /* End Added by KVH - 11-09-20 */
+/* End Added by KVH - 11-09-20 */
 
-    /* Begin Added by KVH - 11-11-20 */
+/* Begin Added by KVH - 11-11-20 */
     /* Add spacing below and bold test of Narrow filter label */
     .fad-content .fad-narrow-options__heading {
         margin-bottom: 16px;
         font-weight: bold;
     }
-    /* End Added by KVH - 11-11-20 */
+/* End Added by KVH - 11-11-20 */
 
-    /* Begin Added by KVH - 12/11/20 */
+/* Begin Added by KVH - 12/11/20 */
     /* Temp fix to include missing carats on mobile (and hide them on desktop) */
-
     .fad-search__suggested-list a:after {
             display: block !important;
         }
@@ -501,7 +493,6 @@ display:none;
             display: none !important;
         }
     }
-
     /* Temp fix to include missing margin between search box and filters box */
     .fad-content__results {
         margin-top: 30px;
@@ -519,41 +510,25 @@ display:none;
             margin-top: 15px;
         }
     }
-    /* End Added by KVH - 12/11/20 */
-
-/*
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-.fad-narrow-options {  
-  animation: 1s ease-out 0s 1 slideInFromLeft !important;
-}
-
-*/
+/* End Added by KVH - 12/11/20 */
 
 /* Hiding FAD CTAs for Radiologists */
 /* Profile pages */
-form[action*="/providers"] .fad-profile__lead a[href="tel:2156624000"],
-form[action*="/providers"] .fad-profile__lead a[href="tel:2156628000"],
-form[action*="/providers"] .fad-profile__lead a[href="tel:2158293000"],
-form[action*="/providers"] .fad-profile__lead a[href="tel:6104315000"],
-form[action*="/providers"] .fad-profile__lead a[href="tel:6109022000"] {
-    display: none;
-    }
-/* Results pages */
-form[action*="/providers"] .fad-result__inner a[href="tel:2156624000"],
-form[action*="/providers"] .fad-result__inner a[href="tel:2156628000"],
-form[action*="/providers"] .fad-result__inner a[href="tel:2158293000"],
-form[action*="/providers"] .fad-result__inner a[href="tel:6104315000"],
-form[action*="/providers"] .fad-result__inner a[href="tel:6109022000"] {
-    display: none;
-    }
+    form[action*="/providers"] .fad-profile__lead a[href="tel:2156624000"],
+    form[action*="/providers"] .fad-profile__lead a[href="tel:2156628000"],
+    form[action*="/providers"] .fad-profile__lead a[href="tel:2158293000"],
+    form[action*="/providers"] .fad-profile__lead a[href="tel:6104315000"],
+    form[action*="/providers"] .fad-profile__lead a[href="tel:6109022000"] {
+        display: none;
+        }
+    /* Results pages */
+    form[action*="/providers"] .fad-result__inner a[href="tel:2156624000"],
+    form[action*="/providers"] .fad-result__inner a[href="tel:2156628000"],
+    form[action*="/providers"] .fad-result__inner a[href="tel:2158293000"],
+    form[action*="/providers"] .fad-result__inner a[href="tel:6104315000"],
+    form[action*="/providers"] .fad-result__inner a[href="tel:6109022000"] {
+        display: none;
+        }
 /*
 |- - END - FAD ReDesign Styles - - - - |
 */
@@ -561,75 +536,71 @@ form[action*="/providers"] .fad-result__inner a[href="tel:6109022000"] {
 /* additional heading style overrides */ 
 /* added by KVH 12/14/20 */
 
-h2.h3, .rtf h2.h3 {
-    color: #393939;
-}
-@media (min-width: 676px) {
     h2.h3, .rtf h2.h3 {
-        font-size: 28px;
+        color: #393939;
     }
-}
-@media (max-width: 675px) {
-    h2.h3, .rtf h2.h3 {
-        font-size: 20px;
+    @media (min-width: 676px) {
+        h2.h3, .rtf h2.h3 {
+            font-size: 28px;
+        }
     }
-}
+    @media (max-width: 675px) {
+        h2.h3, .rtf h2.h3 {
+            font-size: 20px;
+        }
+    }
 /* end additional heading style overrides */ 
 
-/* Short-term fixes for backend dev problems */
-
-a[class*="link-more"]:empty {
-    display: none !important;
-}
 
 /* Temp hide of search box -- NOT IN USE
 
-body .l-header__search.js-global-search,
-body .global-search-overlay.js-global-search-overlay,
-body .l-header__search-toggle {
-    display: none !important;
-}
+    body .l-header__search.js-global-search,
+    body .global-search-overlay.js-global-search-overlay,
+    body .l-header__search-toggle {
+        display: none !important;
+    }
 */
 
 /* Hide Covid Calls alert */
-.content-wrap.js-content-wrap.cf .l-global-alert:nth-of-type(2) {
-display: none;
-}
+    .content-wrap.js-content-wrap.cf .l-global-alert:nth-of-type(2) {
+    display: none;
+    }
 
 /*  remove border and background from arrow buttons on slider */
-.story-slider.has-arrows .story-slider__next, 
-.story-slider.has-arrows .story-slider__prev {
-    border: none;
-    background-color: transparent;
-}
+    .story-slider.has-arrows .story-slider__next, 
+    .story-slider.has-arrows .story-slider__prev {
+        border: none;
+        background-color: transparent;
+    }
+
 /* allow email addresses to break into multiple lines */
-a[href*="mailto:"] {
-overflow-wrap: anywhere;
-}
+    a[href*="mailto:"] {
+    overflow-wrap: anywhere;
+    }
 
 /* --------------------------------------------
 New site search styles (Coveo) 
 -------------------------------------------- */ 
 
 /* darken input border */
-.content-primary .CoveoSearchbox .magic-box, 
-.global-search-overlay .CoveoSearchbox .magic-box, 
-.l-header .CoveoSearchbox .magic-box, 
-.nav-wrap .CoveoSearchbox .magic-box {
-    border: 1px solid #aaa;
-}
+    .content-primary .CoveoSearchbox .magic-box, 
+    .global-search-overlay .CoveoSearchbox .magic-box, 
+    .l-header .CoveoSearchbox .magic-box, 
+    .nav-wrap .CoveoSearchbox .magic-box {
+        border: 1px solid #aaa;
+    }
 /* make submit button icon white */
-.coveo-search-button-svg {
-    color: #fff;
-}
+    .coveo-search-button-svg {
+        color: #fff;
+    }
 /* make submit button background blue */
-.CoveoSearchbox .CoveoSearchButton {
-    background-color: #549ed4;
-}
+    .CoveoSearchbox .CoveoSearchButton {
+        background-color: #549ed4;
+    }
 /* hide type-ahead suggestions */
-#searchbox .CoveoSearchbox .magic-box .magic-box-suggestions {
-    display: none !important;
-}
+    #searchbox .CoveoSearchbox .magic-box .magic-box-suggestions {
+        display: none !important;
+    }
 /* get rid of right margin on search box in mobile */
 @media (max-width: 480px) {
     .CoveoSearchInterface .CoveoSearchbox {
@@ -637,33 +608,11 @@ New site search styles (Coveo)
     }
 }
 
-/* - - END gloabal search box styles - - */
-
 /* --------------------------------------------
-END - New site search styles (Coveo) 
+ /New site search styles (Coveo) 
 -------------------------------------------- */ 
-
-/* Snow emergency overrides
-form[action*="/practices/urgent-care-south-philadelphia"] div.fad-result__times:before {
-    content: "Closing today at 4:00PM due to inclement weather";
-    display: block;
-    padding: .5rem 1rem;
-    background-color: #fff;
-    border-left: 3px solid red;
-    color: #C00;
-    margin-bottom: 1rem;
-}
-a.fad-result__text-link[href*="urgent-care-south-philadelphia"]:after {
-    content: "Closing today at 4:00PM due to inclement weather";
-    display: block;
-    padding: .5rem 1rem;
-    background-color: #fff;
-    border-left: 3px solid red;
-    color: #C00;
-    margin-bottom: 1rem;
-}
-*/
 </style>
+
 
 
 
