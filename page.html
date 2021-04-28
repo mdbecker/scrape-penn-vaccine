@@ -662,8 +662,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<input type="hidden" name="__EVENTARGUMENT" value="" />
 </div>
         
-
-
+<style>
+    #searchbox {
+        display: block;
+    }
+    .CoveoSearchbox {
+        visibility: visible;
+    }
+</style>
 <header class="l-header js-header">
     <div class="l-contain cf">
 
@@ -676,18 +682,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <button type="button" class="l-header__search-toggle icon-search-white-w-sm u-hidden-mq-large js-global-search-toggle"><span class="u-visuallyhidden">Expand Search</span></button>
             <a href="#" class="l-header__nav-toggle u-hidden-mq-large js-nav-toggle">Menu</a>
             <div class="l-header__search">
-                <div class="CoveoAnalytics" data-search-hub="PennMedicineMainSiteSearch"></div>
-                <div>
-                    <div class="CoveoSearchbox" data-query-suggest-character-threshold='3' data-enable-query-syntax='true' data-enable-query-suggest-addon='true'></div>
+                <div class="CoveoSearchInterface" data-enable-history="true" data-pipeline="Filter Penn Medicine Main Site Search">
+                    <div>
+                        <div class="CoveoAnalytics" data-search-hub="PennMedicineMainSiteSearch"></div>
+                        <div class="CoveoSearchbox" data-enable-omnibox="true" data-query-suggest-character-threshold='3' data-enable-query-syntax='true' data-enable-query-suggest-addon='true'></div>
+                    </div>
                 </div>
             </div>
         </div>
-
         <a href="tel:800-789-7366" class="l-header__phone">800-789-7366</a>
-
-
     </div>
 </header>
+
+
 
         <div class="content-wrap js-content-wrap cf">
 
@@ -708,6 +715,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     h2.alert__item-title {
     display: none;
 </style></p>
+                    </div>
+
+                    <button type="button" class="alert__close js-expand-toggle">
+                        Close  <strong class="u-bold">X</strong>
+                    </button>
+
+                </div><!-- .l-contain -->
+            </div>
+        </div><!-- .js-expand-wrap -->
+    
+        <div class="l-global-alert js-expand-wrap module-is-expanded">
+            <div class="alert js-expand-item is-expanded alert--caution">
+                <div class="l-contain">
+
+                    <div class="alert__item">
+                        <h2 class="alert__item-title">Schedule a COVID vaccine appointment</h2>
+                        <p class="alert__item-text"><strong>Schedule a COVID vaccine appointment: </strong>
+call us 8am to 5pm, Monday through Friday, at <a href="tel:267-758-4902">267-758-4902</a>.
+<style>
+/* Hide Covid Calls alert  in Departments section */
+.content-wrap.js-content-wrap.content-wrap--departments .l-global-alert:nth-of-type(2) {
+display: none;
+}
+</style>
+</p>
                     </div>
 
                     <button type="button" class="alert__close js-expand-toggle">
