@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://www.pennmedicine.org/-/media/images/covid_general%20images/nurse_vaccinating_male_patient_bpl7284_1000x658.ashx"></meta>
 
 
-<meta name="VIcurrentDateTime" content="637607576948407854" />
+<meta name="VIcurrentDateTime" content="637607786514626867" />
 <script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
 
 
@@ -64,31 +64,17 @@ body .content-wrap.js-content-wrap.cf .l-global-alert:nth-of-type(2) {
 
 
 <style>
-/* Add slow scroll for anchor links */
-html {
-  scroll-behavior: smooth;
-}
 /* Home page hero overrides */
 .hp-hero {
     background-color: #222222;
 }
-
-/* Brand Campaign fonts */
-.rtf p.ProximaNova-Bold { 
-font-family: ProximaNova-Bold; 
-}
-.rtf p.ProximaNova-Medium { 
-font-family: ProximaNova-Medium; 
-}
-
-/* - - - New body copy link styles - - -
-
+/* -----------------------------------------
+START default anchor tag overrides  
+-------------------------------------------- 
  - - higher contrast using bold
  - - adding underlines
-
  */
- 
- .rtf p a, 
+  .rtf p a, 
  .rtf li a 
     {color: #4d9fe2; text-decoration: underline; font-weight: bold;} 
  .rtf p a:hover, 
@@ -102,14 +88,12 @@ font-family: ProximaNova-Medium;
     {text-decoration: underline; font-weight: normal;}
 .rtf a.btn.btn--blue.btn--small {
     font-weight: normal;}
-
 /* special link styles */
-
  .rtf p a.link-more-e:link,
  .rtf p a.link-more-e:visited,
- .rtf p a.link-more-e:hover
- {text-decoration: none; font-weight: bold;}
-
+ .rtf p a.link-more-e:hover {
+    text-decoration: none; font-weight: bold;
+}
 .landing-list__item-copy h2 a, 
 .landing-list__item-copy h3 a, 
 .general-list__item-text h2 a,
@@ -132,7 +116,9 @@ font-family: ProximaNova-Medium;
  .rtf p a.btn:visited
     {color: #fff; text-decoration: none;}
 
-/* - - -  End new body copy link styles - - - */
+/* -----------------------------------------
+END default anchor tag overrides  
+------------------------------------------ */
 
 .rtf a.btn--medium {
     font-weight: normal;
@@ -143,6 +129,10 @@ font-family: ProximaNova-Medium;
     font-weight: normal;
     font-size: smaller;
     }
+
+/* -----------------------------------------
+START Blog CTA updates  
+------------------------------------------ */
 div.pm-blog-cta {
     margin: 15px 0px;
     width: 100%;
@@ -182,10 +172,12 @@ div.pm-blog-cta a:hover {
        width:100%;
         }
 }
-
-
-/*********** PULL-QUOTES ************/
-
+/* -----------------------------------------
+END Blog CTA updates  
+------------------------------------------ */
+/* --------------------------------------------
+START Pull Quote styles  
+-------------------------------------------- */
     .pm-pullquote {
         width: 50%;
         background-color: #eaeae8;
@@ -217,9 +209,22 @@ div.pm-blog-cta a:hover {
         padding-top: 20px !important;
     }
 
-/*********** END PULL-QUOTES ************/
+/* --------------------------------------------
+END Pull Quote styles  
+-------------------------------------------- */
 
-/*********** NEW BRANDING ************/
+/* --------------------------------------------
+START Brand Campaign styles  
+-------------------------------------------- */
+
+/* Brand Campaign fonts */
+    .rtf p.ProximaNova-Bold { 
+    font-family: ProximaNova-Bold; 
+    }
+    .rtf p.ProximaNova-Medium { 
+    font-family: ProximaNova-Medium; 
+    }
+
 
     @media screen and (max-width: 675px) {
       .rtf h2.brand-camp-title, 
@@ -254,19 +259,25 @@ div.pm-blog-cta a:hover {
         color: #333;
       }
 
-    .fad-provider-bio__ul--links a.fad-link--pdf  {
-    display:none;
-    }
-
-/* -------- BEGIN PERSON PAGES ---------- */
-
+/* --------------------------------------------
+END Brand Campaign styles  
+-------------------------------------------- */
+/* --------------------------------------------
+START "People" template styles  
+-------------------------------------------- */
 /*  PREVENT LONG LINES FROM GETTING HIDDEN  */
     @media (min-width: 676px) {
         .bio-list--two-col {
             overflow-wrap: break-word;
         }
     }
-/* -------- END PERSON PAGES ------- */
+/* --------------------------------------------
+END "People" template styles  
+-------------------------------------------- */
+
+/* --------------------------------------------
+START Jump link and target styles  
+-------------------------------------------- */
 
 /*  -------- HASH LINK TARGET POSITIONING ---------
     -  Corrects spacing for inner page jump links.
@@ -306,67 +317,55 @@ div.pm-blog-cta a:hover {
          background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTQgMTQiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiPjxwYXRoIGQ9Ik0gMTIgNyBMIDIgNyIgc3Ryb2tlPSIjNjQ1ZDVmIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48L3N2Zz4=);
     }
 /* --------------------------------------- */
+/* --------------------------------------------
+END Jump link and target styles  
+-------------------------------------------- */
 
-/* ---- UNDERLINE PAGE ERROR LINKS  ----- */
-.page-error .page-error__message p a {
-    text-decoration: underline;
-}
-/* --------------------------------------- */
-
-
-
-/* SPECIAL ALERT STYLES */
-    /* adds hz rule between alerts */
+/* --------------------------------------------
+START Global alert styles  
+-------------------------------------------- */
+/* adds hz rule between alerts */
     .alert__item-text.alert-2 {
         border-top: 1px solid #ccc; 
         margin-top: 1rem; 
         padding-top: 1rem; 
         display: block;
     }
-    /* hides close button */
+/* hides close button */
     .alert__close, [type=button].alert__close {
         display: none;
-}
+    }
 
-/* TEMP fix for home page alert  */
-    /* fixes weird padding */
+/* --------------------------------------------
+END Global alert styles  
+-------------------------------------------- */
+/* --------------------------------------------
+START Temp fix for home page alert (fixes weird padding )  
+-------------------------------------------- */
+
     @media (max-width: 1100px) {
     .alert .l-contain {
         padding-bottom: 10px;
         padding-top: 0px;
       }
     }
-
-/* Temp hide of missing landing pages */
+/* --------------------------------------------
+END Temp fix for home page alert (fixes weird padding )  
+-------------------------------------------- */
+/* --------------------------------------------
+START Temp hide of links to missing landing pages 
+-------------------------------------------- */
     div.pm-blog-cta a[href*="https://lp.pennmedicine.org/msk/joint-knee-arthritis/"],
     div.pm-blog-cta a[href*="https://lp.pennmedicine.org/cardiac/tavr/"]
      {
         display: none;
     }
-
-/* 
-| - - - - TEMP FAD Overrides - - - - | 
-*/
-    /* Expertise toggle */
-    .fad-rtf a.fad-detail__terms__list--toggle {
-        border: 1px solid #3277B8;
-        padding: .5rem;
-        border-radius: .35rem;
-        background-color: rgba(255,255,255, 1); 
-        display: inline-block;
-        font-weight: bold;
-        text-decoration: none;
-        position: relative;
-        left: 1rem;
-    }
-    .fad-rtf a.fad-detail__terms__list--toggle.this-is-active:after {
-        content: "[ - ]";
-    }
-    .fad-rtf a.fad-detail__terms__list--toggle:after {
-        content: "[ + ]";
-        margin-left: 1rem;
-    }
-
+/* --------------------------------------------
+END Temp hide of links to missing landing pages 
+-------------------------------------------- */
+/* --------------------------------------------
+START DocsASAP CTA on provider profile page styling
+-------------------------------------------- */
 /* DocsASAP CTA - profile */
 
     @media  (max-width: 840px)  {
@@ -379,15 +378,22 @@ div.pm-blog-cta a:hover {
             display: none;
         }
     }
-
+/* --------------------------------------------
+End DocsASAP CTA on provider profile page styling
+-------------------------------------------- */
+/* --------------------------------------------
+START mystery DF styling (why we want to hide whatever is remains to be investigated)
+-------------------------------------------- */
     @media print {
       #df { display: none; }
     }
-/*
- - - - - FAD ReDesign Styles - - - - - 
-*/
-/* Begin Added by KVH - 11-05-20 */
-    /* Resize Map in new FAD locations results page */
+/* --------------------------------------------
+End mystery DF styling
+-------------------------------------------- */
+/* --------------------------------------------
+START Find a Doctor page styling
+-------------------------------------------- */
+/* Resize Map in new FAD locations results page -Added by KVH - 11-05-20 */
     .content-primary .fad-gmap {
         height: 30vh;
     }
@@ -407,10 +413,7 @@ div.pm-blog-cta a:hover {
             right: 0;
         }
     }
-/* End Added by KVH - 11-05-20 */
-
-/* Begin Added by KVH - 11-09-20 */
-    /* Re-style narrow filters to make prominent on results page */
+/* Re-style narrow filters to make prominent on results page -Added by KVH - 11-09-20 */
     .fad-content .fad-narrow-options .fad-btn--pill {
         padding: 10px 40px 10px 24px;
         border: 1px solid rgba(0,102,204,.3);
@@ -450,70 +453,36 @@ div.pm-blog-cta a:hover {
         height: 28px;
         right: 4px;
       }
-    /* Re-style suggested links to make prominent 
-    @media (min-width: 676px) {
-      .fad-search__suggested-list a {
-        display: inline-block;
-        font-weight: 400;
-        padding-left: 0;
-        padding: .5rem;
-        color: #fff;
-        text-decoration: none !important;
-        padding: .5rem .7rem !important;
-        background-color: #458eca;
-        color: #fff !important;
-        border-radius: .5rem;
-      }
-      .fad-search__suggested-label {
-        display: block !important;
-        padding: 1rem 0 !important;
-        margin-left: 0 !important;
-        color: #666 !important;
-      }
-        .fad-search__suggested-list {
-        margin-left: 0 !important;
-        padding-left: 0 !important;
-      }
-        .fad-search__suggested-list li {
-        padding-right: 10px !important;
-      }
-    }
- End Added by KVH - 11-09-20 */
-
+/*  -Added by KVH - 11-09-20 */
 @media (min-width: 676px) {
-	.fad-search__suggested-label strong {
-	    color: #999;
-	}
+    .fad-search__suggested-label strong {
+        color: #999;
+    }
 }
 
-/* Begin Added by KVH - 11-11-20 */
-    /* Add spacing below and bold test of Narrow filter label */
+/* Add spacing below and bold test of Narrow filter label -Added by KVH - 11-11-20 */
     .fad-content .fad-narrow-options__heading {
         margin-bottom: 16px;
         font-weight: bold;
     }
-/* End Added by KVH - 11-11-20 */
-
-/* Begin Added by KVH - 12/11/20 */
-    /* Temp fix to include missing carats on mobile (and hide them on desktop) */
+/* Temp fix to include missing carats on mobile (and hide them on desktop) -Added by KVH - 12/11/20 */
     .fad-search__suggested-list a:after {
             display: block !important;
         }
-
     @media (min-width:676px) {
         .fad-search__suggested-list a:after {
             display: none !important;
         }
     }
-    /* Temp fix to include missing margin between search box and filters box */
+/* Temp fix to include missing margin between search box and filters box  -Added by KVH - 12/11/20 */
     .fad-content__results {
         margin-top: 30px;
     }
-    /* adding spacing below suggested links */
+/* adding spacing below suggested links */
     .fad-search__suggested {
         margin-bottom: 70px;
     }
-    /* adding spacing between suggested links and search box on mobile */
+/* adding spacing between suggested links and search box on mobile -Added by KVH - 12/11/20 */
     .fad-search__suggested {
         margin-top: 25px !important;
     }
@@ -522,18 +491,11 @@ div.pm-blog-cta a:hover {
             margin-top: 15px;
         }
     }
-/* End Added by KVH - 12/11/20 */
-
-/* BEGIN Added by KVH - 04/12/21 */
-
-    /* remove copy bolding and border to reduce prominence of 911 alert */
+/* remove copy bolding and border to reduce prominence of 911 alert -Added by KVH - 04/12/21 */
     .fad-content  .fad-message--emergency {
         border: none;
         font-weight: normal;
     }
-
-/* END Added by KVH - 04/12/21 */
-
 /* Hiding FAD CTAs for Radiologists */
 /* Profile pages */
     form[action*="/providers"] .fad-profile__lead a[href="tel:2156624000"],
@@ -543,7 +505,7 @@ div.pm-blog-cta a:hover {
     form[action*="/providers"] .fad-profile__lead a[href="tel:6109022000"] {
         display: none;
         }
-    /* Results pages */
+/* Results pages */
     form[action*="/providers"] .fad-result__inner a[href="tel:2156624000"],
     form[action*="/providers"] .fad-result__inner a[href="tel:2156628000"],
     form[action*="/providers"] .fad-result__inner a[href="tel:2158293000"],
@@ -551,70 +513,60 @@ div.pm-blog-cta a:hover {
     form[action*="/providers"] .fad-result__inner a[href="tel:6109022000"] {
         display: none;
         }
-/*
-|- - END - FAD ReDesign Styles - - - - |
-*/
 
-/* additional heading style overrides */ 
-/* added by KVH 12/14/20 */
-
-    h2.h3, .rtf h2.h3 {
-        color: #393939;
+/* Expertise toggle updates */
+    .fad-rtf a.fad-detail__terms__list--toggle {
+        border: 1px solid #3277B8;
+        padding: .5rem;
+        border-radius: .35rem;
+        background-color: rgba(255,255,255, 1); 
+        display: inline-block;
+        font-weight: bold;
+        text-decoration: none;
+        position: relative;
+        left: 1rem;
     }
-    @media (min-width: 676px) {
-        h2.h3, .rtf h2.h3 {
-            font-size: 28px;
-        }
+    .fad-rtf a.fad-detail__terms__list--toggle.this-is-active:after {
+        content: "[ - ]";
     }
-    @media (max-width: 675px) {
-        h2.h3, .rtf h2.h3 {
-            font-size: 20px;
-        }
+    .fad-rtf a.fad-detail__terms__list--toggle:after {
+        content: "[ + ]";
+        margin-left: 1rem;
     }
-/* end additional heading style overrides */ 
-
-
-/* Temp hide of search box -- NOT IN USE
-
-    body .l-header__search.js-global-search,
-    body .global-search-overlay.js-global-search-overlay,
-    body .l-header__search-toggle {
-        display: none !important;
-    }
-*/
-
-/* Hide Covid Calls alert */
+/* --------------------------------------------
+END Find a Doctor pages styling
+-------------------------------------------- */ 
+/* --------------------------------------------
+START Global Alert styling
+-------------------------------------------- */ 
+/* Hide 'Covid Calls' alert by default */
+/* this is overriden on COVID section pages where the COVID alert is hidden */
     .content-wrap.js-content-wrap.cf .l-global-alert:nth-of-type(2) {
     display: none;
     }
 
-/*  remove border and background from arrow buttons on slider */
-    .story-slider.has-arrows .story-slider__next, 
-    .story-slider.has-arrows .story-slider__prev {
-        border: none;
-        background-color: transparent;
-    }
-
+/* --------------------------------------------
+START special link styling
+-------------------------------------------- */ 
 /* allow email addresses to break into multiple lines */
     a[href*="mailto:"] {
     overflow-wrap: anywhere;
     }
-
+/* make myPennMed link bold */
+    .nav-utility a[href*="secure.mypennmedicine.org"] {
+        font-weight: bold;
+    }
+/* underline page error links  */
+    .page-error .page-error__message p a {
+        text-decoration: underline;
+    }
 /* --------------------------------------------
-mPM util link styling
--------------------------------------------- */ 
-. nav-utility a[href*="secure.mypennmedicine.org"] {
-    font-weight: bold;
-}
-
-/* --------------------------------------------
-END mPM util link styling 
--------------------------------------------- */ 
-
-/* --------------------------------------------
-New site search styles (Coveo) 
+END special link styling 
 -------------------------------------------- */ 
 
+/* --------------------------------------------
+START Masthead site search styles (Coveo) 
+-------------------------------------------- */ 
 /* darken input border */
     .content-primary .CoveoSearchbox .magic-box, 
     .global-search-overlay .CoveoSearchbox .magic-box, 
@@ -630,21 +582,120 @@ New site search styles (Coveo)
     .CoveoSearchbox .CoveoSearchButton {
         background-color: #549ed4;
     }
-/* hide type-ahead suggestions
-    #searchbox .CoveoSearchbox .magic-box .magic-box-suggestions {
-        display: none !important;
-    }
- */
 /* get rid of right margin on search box in mobile */
 @media (max-width: 480px) {
     .CoveoSearchInterface .CoveoSearchbox {
         margin-right: 0;
     }
 }
+/* --------------------------------------------
+END Masthead site search styles (Coveo) 
+-------------------------------------------- */ 
 
 /* --------------------------------------------
- / New site search styles (Coveo) 
+START general styling fixes and updates
+-------------------------------------------- 
+ ! these need to be made in main.css !
+-------------------------------------------- */
+/*  remove border and background from arrow buttons on slider */
+    .story-slider.has-arrows .story-slider__next, 
+    .story-slider.has-arrows .story-slider__prev {
+        border: none;
+        background-color: transparent;
+    }
+/* update H2 heading colors when an .h3 class is applied */
+    h2.h3, .rtf h2.h3 {
+        color: #393939;
+    }
+    @media (min-width: 676px) {
+        h2.h3, .rtf h2.h3 {
+            font-size: 28px;
+        }
+    }
+    @media (max-width: 675px) {
+        h2.h3, .rtf h2.h3 {
+            font-size: 20px;
+        }
+    }
+/* Add slow scroll for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+/* orphan style override */
+    .fad-provider-bio__ul--links a.fad-link--pdf  {
+    display:none;
+    }
+/* --------------------------------------------
+END general styling fixes and updates
 -------------------------------------------- */ 
+
+/* --------------------------------------------
+ Temporary (Auth only) FAD styles 
+-------------------------------------------- */
+/* Add hint text that appears above "find" input field */
+div.fad-search__wrapper:before {
+    display: block;
+    content: "Condition, treatment, specialty or name";
+    position: absolute;
+    top: -38px;
+    left: 60px;
+    background-color: #ddd;
+    color: #333;
+    padding: .5rem 1rem .5rem;
+    border-radius: .5rem;
+    border-top-right-radius: .5rem;
+    font-size: 14px;
+}
+/* Add down arrow on bottom of hint text bubble that appears above "find" input field */
+div.fad-search__wrapper:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 150px;
+    width: 0px;
+    height: 0;
+    border: 15px solid transparent;
+    border-top: 20px solid #ddd;
+}
+/* Add space to allow for hint bubble between emergency message and search box */
+.fad-content  .fad-message--emergency {
+    margin-bottom: 80px;
+    font-size: 14px;
+}
+/* change placement of hint bubble on narrower screens */
+@media screen and (max-width: 400px) {
+    div.fad-search__wrapper:before {
+        left: 20px;
+        right: 20px;
+        text-align: center;
+    }
+}
+/* hide placeholder text in Find field */
+div.fad-search__wrapper input::placeholder {
+  color: #fff;
+}
+div.fad-search__wrapper input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+div.fad-search__wrapper input::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+div.fad-search__wrapper input::-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+div.fad-search__wrapper input::-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+/* Hides hint bubble if not initial search page ("keyword" is only present in form action on results pages) */
+form[action*="keyword"] div.fad-search__wrapper:before,
+form[action*="keyword"] div.fad-search__wrapper:after {
+    display: none;
+}
+
+/* --------------------------------------------
+ / Temporary (Auth only) FAD styles 
+-------------------------------------------- */  
 </style>
 
    <!-- SCID: {FD0EBF78-EF46-4BA5-8F0A-BAA3C8EE3D06}-->
