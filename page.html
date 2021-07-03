@@ -530,6 +530,67 @@ START Find a Doctor page styling
         content: "[ + ]";
         margin-left: 1rem;
     }
+
+/* Add hint text that appears above "find" input field */
+div.fad-search__wrapper:before {
+    display: block;
+    content: "Condition, treatment, specialty or name";
+    position: absolute;
+    top: -38px;
+    left: 60px;
+    background-color: #ddd;
+    color: #333;
+    padding: .5rem 1rem .5rem;
+    border-radius: .5rem;
+    border-top-right-radius: .5rem;
+    font-size: 14px;
+}
+/* Add down arrow on bottom of hint text bubble that appears above "find" input field */
+div.fad-search__wrapper:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 150px;
+    width: 0px;
+    height: 0;
+    border: 15px solid transparent;
+    border-top: 20px solid #ddd;
+}
+/* Add space to allow for hint bubble between emergency message and search box */
+.fad-content  .fad-message--emergency {
+    margin-bottom: 80px;
+    font-size: 14px;
+}
+/* change placement of hint bubble on narrower screens */
+@media screen and (max-width: 400px) {
+    div.fad-search__wrapper:before {
+        left: 20px;
+        right: 20px;
+        text-align: center;
+    }
+}
+/* hide placeholder text in Find field */
+div.fad-search__wrapper input::placeholder {
+  color: #fff;
+}
+div.fad-search__wrapper input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+div.fad-search__wrapper input::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+div.fad-search__wrapper input::-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+div.fad-search__wrapper input::-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+/* Hides hint bubble if not initial search page ("keyword" is only present in form action on results pages) */
+form[action*="keyword"] div.fad-search__wrapper:before,
+form[action*="keyword"] div.fad-search__wrapper:after {
+    display: none;
+}
 /* --------------------------------------------
 END Find a Doctor pages styling
 -------------------------------------------- */ 
@@ -627,72 +688,21 @@ END general styling fixes and updates
 -------------------------------------------- */ 
 
 /* --------------------------------------------
- Temporary (Auth only) FAD styles 
--------------------------------------------- */
-/* Add hint text that appears above "find" input field */
-div.fad-search__wrapper:before {
-    display: block;
-    content: "Condition, treatment, specialty or name";
-    position: absolute;
-    top: -38px;
-    left: 60px;
-    background-color: #ddd;
-    color: #333;
-    padding: .5rem 1rem .5rem;
-    border-radius: .5rem;
-    border-top-right-radius: .5rem;
-    font-size: 14px;
+START Temporary South Philly Urgent Care profile CTA overrides 
+-------------------------------------------- */ 
+/* Hide the Epic Scheduling CTA
+form[action*="/practices/urgent-care-south-philadelphia"] a[href*="SignupAndSchedule"] {
+	display:none;
 }
-/* Add down arrow on bottom of hint text bubble that appears above "find" input field */
-div.fad-search__wrapper:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 150px;
-    width: 0px;
-    height: 0;
-    border: 15px solid transparent;
-    border-top: 20px solid #ddd;
-}
-/* Add space to allow for hint bubble between emergency message and search box */
-.fad-content  .fad-message--emergency {
-    margin-bottom: 80px;
-    font-size: 14px;
-}
-/* change placement of hint bubble on narrower screens */
-@media screen and (max-width: 400px) {
-    div.fad-search__wrapper:before {
-        left: 20px;
-        right: 20px;
-        text-align: center;
-    }
-}
-/* hide placeholder text in Find field */
-div.fad-search__wrapper input::placeholder {
-  color: #fff;
-}
-div.fad-search__wrapper input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #fff;
-}
-div.fad-search__wrapper input::-moz-placeholder { /* Firefox 19+ */
-  color: #fff;
-}
-div.fad-search__wrapper input::-ms-input-placeholder { /* IE 10+ */
-  color: #fff;
-}
-div.fad-search__wrapper input::-moz-placeholder { /* Firefox 18- */
-  color: #fff;
-}
-/* Hides hint bubble if not initial search page ("keyword" is only present in form action on results pages) */
-form[action*="keyword"] div.fad-search__wrapper:before,
-form[action*="keyword"] div.fad-search__wrapper:after {
-    display: none;
+ */ 
+/* Hide the ClockWiseMD Scheduling CTA */
+ form[action*="/practices/urgent-care-south-philadelphia"] a[href*="clockwise"] {
+	display:none;
 }
 
 /* --------------------------------------------
- / Temporary (Auth only) FAD styles 
--------------------------------------------- */  
+END Temporary South Philly Urgent Care profile CTA overrides 
+-------------------------------------------- */
 </style>
 
    <!-- SCID: {FD0EBF78-EF46-4BA5-8F0A-BAA3C8EE3D06}-->
