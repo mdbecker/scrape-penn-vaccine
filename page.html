@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://www.pennmedicine.org/-/media/images/covid_general%20images/nurse_vaccinating_male_patient_bpl7284_1000x658.ashx"></meta>
 
 
-<meta name="VIcurrentDateTime" content="637622902415204559" />
+<meta name="VIcurrentDateTime" content="637623131675683218" />
 <script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
 
 
@@ -692,26 +692,16 @@ END general styling fixes and updates
 /* --------------------------------------------
  START temp hacks for Cherry Hill practices
 -------------------------------------------- */
+form[action*="/practices/radiation-oncology-cherry-hill"] .fad-result__address.fad-mb-1.fad-rtf:after,
 form[action*="/practices/infusion-services-cherry-hill"] .fad-result__address.fad-mb-1.fad-rtf:after
  {
     display: block;
     content: "A facility of Penn Presbyterian Medical Center";
     font-size: 80%;
 }
-form[action*="/practices/radiation-oncology-cherry-hill"] .fad-result__address-text:before
- {
-    display: block;
-    content: "Penn Presbyterian Infusion Services";
-}
-/*
-form[action*="/practices/radiation-oncology-cherry-hill"] .fad-result__address.fad-mb-1.fad-rtf:after 
- {
-    display: block;
-    content: "A facility of Penn Presbyterian Medical Center";
-    font-size: 80%;
-}
-*/
-form[action*="/practices/"] a[href*="/practices/infusion-services-cherry-hill"] .fad-result__address.fad-mb-1:after
+
+form[action*="/practices"] a[href*="/practices/radiation-oncology-cherry-hill"] .fad-result__address.fad-mb-1:after,
+form[action*="/practices"] a[href*="/practices/infusion-services-cherry-hill"] .fad-result__address.fad-mb-1:after
  {
     display: block;
     content: "A facility of Penn Presbyterian Medical Center";
