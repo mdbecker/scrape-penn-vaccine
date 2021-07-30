@@ -28,6 +28,9 @@
 <meta property="og:image" content="https://www.pennmedicine.org/-/media/images/covid_general%20images/vaccination%20clinics/vax_community_collab_bpl5290.ashx"></meta>
 
 
+<meta name="VIcurrentDateTime" content="637632197848567639" />
+<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
+
 
 <link rel="stylesheet" href="/Assets/PennMedicine/built/css/main.css">
 <!--[if lt IE 9]>
@@ -694,7 +697,7 @@ END general styling fixes and updates
 --------------------------------------------  */
 /* --------------------------------------------
  START temp hacks for Cherry Hill practices
--------------------------------------------- */
+--------------------------------------------*/
 form[action*="/practices/radiation-oncology-cherry-hill"] .fad-result__address.fad-mb-1.fad-rtf:after,
 form[action*="/practices/infusion-services-cherry-hill"] .fad-result__address.fad-mb-1.fad-rtf:after
  {
@@ -702,7 +705,6 @@ form[action*="/practices/infusion-services-cherry-hill"] .fad-result__address.fa
     content: "A facility of Penn Presbyterian Medical Center";
     font-size: 80%;
 }
-
 form[action*="/practices"] a[href*="/practices/radiation-oncology-cherry-hill"] .fad-result__address.fad-mb-1:after,
 form[action*="/practices"] a[href*="/practices/infusion-services-cherry-hill"] .fad-result__address.fad-mb-1:after
  {
@@ -712,11 +714,384 @@ form[action*="/practices"] a[href*="/practices/infusion-services-cherry-hill"] .
     font-size: 80%;
     padding-top: .25rem;
 }
-
-
 /* --------------------------------------------
 END temp hacks for Cherry Hill practices
 -------------------------------------------- */
+/* --------------------------------------------
+START New Font test
+---------------------------------------------
+
+.nav-primary__level3 {
+    font-family: proximanova-medium, Arial,sans-serif;
+    margin-top: 22px;
+}
+
+button, html, input, select, textarea {
+    color: #000;
+    font-family:  proximanova-medium, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.big-list, .ol, .p, .rtf ol, .rtf p, .rtf ul, .ul {
+    color: inherit;
+    font-family: proximanova-medium, Arial, sans-serif;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.content-masthead .content-masthead-plain {
+	background: #e5e4df;
+	padding: 6px 18px;
+	font-size: 30px;
+	font-family: ProximaNova-Medium, Arial, sans-serif
+}
+.content__region>h2,
+.h6,
+.hp-hero__title,
+.l-header__phone,
+.link-more-e,
+.link-more-w,
+.nav-primary .article-list__title,
+.portlet--big-title .portlet__title,
+.portlet--spotlight-story .portlet__link,
+.preview-hero__more,
+.preview-hero__title,
+.quote-callout,
+.rtf h6,
+.select-wrap--lg .select,
+.slider__slide-title,
+.story-slider__story-title,
+.text-grid--big-titles .text-grid__title,
+.thumb-list__section {
+	font-family: ProximaNova-Light, ProximaNova-Medium, Arial, sans-serif
+}
+
+.is-selected .pika-button,
+.is-today .pika-button,
+.l-header-global-cta__phone,
+.portlet__tab,
+.portlet__tab-title,
+.rtf .link-more-e,
+.rtf .link-more-w,
+.tabnav__content-list-item--head,
+.tabnav__mobile-toggle,
+.tabnav__toggle {
+	font-family: ProximaNova-Bold, Arial, sans-serif;
+	font-weight: 700
+}
+.rtf blockquote p,
+blockquote,
+blockquote p {
+	font-family: ProximaNova-Light, ProximaNova-Medium, Arial, sans-serif
+}
+.link-more-w.link-more-w--lg {
+	font-size: 26px;
+	font-family: ProximaNova-Light, ProximaNova-Medium, Arial, sans-serif;
+	font-weight: 400;
+	line-height: 26px;
+	padding-left: 35px;
+	position: relative
+}
+.regular-weight {
+	font-family: ProximaNova-Medium, Arial, sans-serif
+}
+
+@media (max-width:1100px) {
+	.h1-main__title {
+		font-family: ProximaNova-Medium, Arial, sans-serif
+	}
+}
+@media (min-width:676px) {
+	.h2,
+	.rtf h2 {
+		font-size: 37px;
+		font-family: ProximaNova-Light, ProximaNova-Medium, Arial, sans-serif
+	}
+}
+@media (min-width:1101px) {
+	.h1,
+	.h1-main__title {
+		font-family: ProximaNova-Light, ProximaNova-Medium, Arial, sans-serif
+	}
+}
+.accordion .accordion__item-title {
+	font-family: ProximaNova-Medium, Arial, sans-serif;
+	font-size: 18px;
+	margin: 0
+}
+.addthisevent_dropdown {
+	background-color: #FFF;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+	color: #645D5F;
+	display: none;
+	font-size: 16px;
+	padding: 10px 30px;
+	position: absolute;
+	width: 100%;
+	font-family: ProximaNova-Light, ProximaNova-Medium, Arial, sans-serif
+}
+.author-list__label {
+	margin-right: 12px;
+	vertical-align: top;
+	margin-top: 7px;
+	font-size: 17px;
+	color: #635d5f;
+	font-family: ProximaNova-Medium, Arial, sans-serif
+}
+.cta-list-v2>li a {
+	font-family: ProximaNova-Medium, Arial, sans-serif;
+	font-size: 18px
+}
+
+@media (max-width:1100px) {
+	.nav__level1-toggle {
+		background-position: -9999px;
+		color: #0059A3;
+		display: block;
+		padding: 15px 60px 15px 28px;
+		position: relative;
+		font-family: ProximaNova-Medium, Arial, sans-serif
+	}
+	.module-is-collapsed>.nav__level1-toggle,
+	.module-is-expanded>.nav__level1-toggle,
+	.nav__level1-toggle.nav-primary__level1-link {
+		font-family: ProximaNova-Bold, Arial, sans-serif;
+		font-weight: 700
+	}
+	.nav-wrap--divisions .nav-primary__level1>li>a {
+		font-family: ProximaNova-Medium, Arial, sans-serif;
+		font-size: 18px;
+		font-weight: 400
+	}
+	.nav-primary__departments-header {
+		font-family: ProximaNova-Medium, Arial, sans-serif;
+		-ms-flex-align: center;
+		align-items: center;
+		background-color: #fff;
+		border-bottom: 1px solid #dadcd7;
+		display: none;
+		color: #2a3980;
+		font-size: 23px;
+		height: 60px;
+		padding-left: 25px;
+		padding-right: 25px
+	}
+}
+@media (min-width:1101px) {
+	.nav-primary__level1>li {
+		color: #2A3D83;
+		display: block;
+		font-size: 20px;
+		float: left;
+		font-family: ProximaNova-Medium, Arial, sans-serif
+	}
+}
+
+.nav-breadcrumbs__level1>li:first-child .nav-breadcrumbs__toggle,
+.nav-breadcrumbs__level1>li:last-child .nav-breadcrumbs__toggle {
+	font-family: ProximaNova-Bold, Arial, sans-serif
+}
+.nav-breadcrumbs__level1>li.last-child .nav-breadcrumbs__toggle {
+	font-family: ProximaNova-Bold, Arial, sans-serif
+}
+
+.portlet__list--locations>li {
+	font-family: ProximaNova-Medium, Arial, sans-serif;
+	line-height: 1.3em
+}
+.portlet--spotlight-video .portlet__more {
+	font-size: 17px;
+	color: #3277B8;
+	font-family: ProximaNova-Medium, Arial, sans-serif
+}
+.portlet--social-basic .portlet__more {
+	color: #3277B8;
+	font-family: ProximaNova-Medium, Arial, sans-serif
+}
+.preview-hero--big-txt p {
+	font-size: 26px;
+	font-family: ProximaNova-Light, ProximaNova-Medium, Arial, sans-serif;
+	line-height: 1.2em
+}
+.global-search-overlay .tt-suggestion {
+	border-top: 0;
+	color: #FFF;
+	font-family: ProximaNova-Medium, Arial, sans-serif
+}
+.thumb-grid__more-btn {
+	background-color: #0a5680;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	font-family: ProximaNova-Bold, Arial, sans-serif;
+	height: 50px;
+	margin: 0 auto 3em;
+	padding-bottom: 3px;
+	text-align: center;
+	width: 200px
+}
+.tabs--vertical-bold .tabs__title,
+.tagbar__label {
+	font-family: ProximaNova-Medium, Arial, sans-serif
+}
+.scfForm.scfForm .scfCaptchaLabel,
+.scfForm.scfForm .scfCheckBoxListLabel,
+.scfForm.scfForm .scfConfirmPasswordLabel,
+.scfForm.scfForm .scfCreditCardLabel,
+.scfForm.scfForm .scfDateLabel,
+.scfForm.scfForm .scfDatePickerLabel,
+.scfForm.scfForm .scfDateSelectorLabel,
+.scfForm.scfForm .scfDropListLabel,
+.scfForm.scfForm .scfEmailLabel,
+.scfForm.scfForm .scfFileUploadLabel,
+.scfForm.scfForm .scfListBoxLabel,
+.scfForm.scfForm .scfMultipleLineTextLabel,
+.scfForm.scfForm .scfNumberLabel,
+.scfForm.scfForm .scfPasswordLabel,
+.scfForm.scfForm .scfRadioButtonListLabel,
+.scfForm.scfForm .scfSingleLineTextLabel,
+.scfForm.scfForm .scfSmsTelephoneLabel,
+.scfForm.scfForm .scfTelephoneLabel {
+	color: #645D5F;
+	float: none;
+	font-size: 18px;
+	line-height: 1.2em;
+	margin-bottom: 6px;
+	width: auto;
+	font-family: ProximaNova-Medium, Arial, sans-serif
+}
+
+@media (max-width:675px) {
+	.scfForm.scfForm .halfAvailableWidth,
+	.scfForm.scfForm .scfShortText,
+	.scfForm.scfForm .thirdAvailableWidth {
+		float: none;
+		width: auto
+	}
+	.scfForm.scfForm .scfTitleBorder {
+		font-size: 25px;
+		font-family: ProximaNova-Medium, Arial, sans-serif
+	}
+}
+@media (min-width:676px) {
+	.scfForm.scfForm .scfTitleBorder {
+		font-size: 37px;
+		font-family: ProximaNova-Light, ProximaNova-Medium, Arial, sans-serif
+	}
+}
+.bio__title,
+.btn,
+.btn-helper,
+.content-nav-link,
+.event-date,
+.event-listing .table__sort-toggle,
+.faculty-search__form .label,
+.faculty-search__form-browse-by,
+.faculty-search__sort-options li>.is-active,
+.filters__flyout--trigger,
+.filters__title,
+.form--basic .input-label,
+.form--basic .label,
+.form__connector,
+.h2-main__title,
+.h4,
+.h5,
+.hp-hero__subtitle,
+.index,
+.input-label,
+.l-header__select,
+.label,
+.letters>a.is-inactive,
+.link-more-e--lg,
+.list-links a,
+.modal__title,
+.nav-breadcrumbs a.is-active,
+.nav-primary__level2>li,
+.nav-quick__link,
+.nav__button,
+.person-list__phone,
+.portlet__list>li,
+.rtf h4,
+.rtf h5,
+.scfForm.scfForm .scfSubmitButton,
+.select-wrap>.select,
+.select-wrap>select,
+.story-slider--more-stories .story-slider__story-title,
+.table--events .table__col--title a,
+.table__sort-toggle {
+	font-family: ProximaNova-Medium, Arial, sans-serif
+}
+.bio__info .link-arrow,
+.btn--external-open .btn__text,
+.cta--img .cta__text,
+.event-date--sm .event-date__day,
+.faculty-search__sort-by,
+.form--basic input[type=checkbox]+label,
+.form--basic input[type=checkbox]+span,
+.form--basic input[type=radio]+label,
+.form--basic input[type=radio]+span,
+.h2-main__link .h2-main__title,
+.h2-main__title--with-links a,
+.h3,
+.l-header-global-cta__phone-sub,
+.l-header-global-cta__title,
+.letters>a,
+.link-more-e,
+.link-more-w,
+.link-rtf-more-acc,
+.link-rtf-more-pm,
+.nav-breadcrumbs,
+.nav-wrap--departments .nav-primary__level2>li,
+.pika-single,
+.pika-table abbr,
+.portlet--cta-basic .portlet__note,
+.portlet--cta-basic .portlet__title,
+.portlet--form .portlet__title,
+.portlet--h3-title .portlet__title,
+.portlet--h3-title--small .portlet__title,
+.portlet--login .portlet__pretitle,
+.portlet--login .portlet__title,
+.portlet--plain .portlet__title,
+.portlet--plain-links .list__text,
+.portlet--plain-links .portlet__list a,
+.portlet--plain-links .portlet__title,
+.portlet--preview .portlet__more,
+.portlet--preview .portlet__title,
+.portlet--related .link-more-w,
+.portlet--related .portlet__title,
+.portlet--social .portlet__subtitle,
+.portlet--social .portlet__title,
+.portlet--social-basic .portlet__title,
+.portlet--spotlight-story .portlet__subtitle,
+.portlet--spotlight-story .portlet__title,
+.portlet--spotlight-video .portlet__title,
+.portlet--tag-links .portlet__title,
+.portlet__tab-subtitle,
+.rtf h3,
+.similar-content .portlet__title,
+.slider__pager-btn,
+.story-slider--related .story-slider__story-title,
+.tabs__toggle,
+.text-grid--light .text-grid__item-title,
+.text-grid--light .text-grid__item-title>a,
+.thumb-list__item-name {
+	font-family: ProximaNova-Medium, Arial, sans-serif
+}
+
+.CoveoSearchInterface {
+    min-height: 100%;
+    position: relative;
+    margin: 0;
+    font-family: ProximaNova-Medium,  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, sans-serif;
+    font-size: 15px;
+    color: #313a45;
+}
+
+--------------------------------------------
+END New Font test
+-------------------------------------------- */
+
 </style>
 
    <!-- SCID: {FD0EBF78-EF46-4BA5-8F0A-BAA3C8EE3D06}-->
