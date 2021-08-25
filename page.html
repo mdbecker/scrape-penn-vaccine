@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://www.pennmedicine.org/-/media/images/covid_general%20images/vaccination%20clinics/vax_community_collab_bpl5290.ashx"></meta>
 
 
-<meta name="VIcurrentDateTime" content="637655098283236496" />
+<meta name="VIcurrentDateTime" content="637655304396234650" />
 <script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
 
 
@@ -1091,7 +1091,38 @@ blockquote p {
 --------------------------------------------
 END New Font test
 -------------------------------------------- */
-
+/* --------------------------------------------
+START Audio player customization
+-------------------------------------------- */
+/* gives AUDIO element blue background in  'webkit' browsers */
+    audio::-webkit-media-controls-panel {
+        background: #BBDDFC;
+}
+/*--------------------------------------------
+END Audio player customization
+--------------------------------------------
+START Clinical Podcast page customizations
+-------------------------------------------- */
+/* HIde the right column content area */
+form[action*="/for-health-care-professionals/for-physicians/physician-education-and-resources/physician-interviews/2"] section.content-secondary {
+    display: none;
+}
+@media (min-width: 1101px) {
+/* have main content area expand into the space where the right column used to be in desktop */
+    .l-3-col-master .content-primary {
+        padding-right: 0;
+        width: 76%;
+    }
+/* remove extra padding on right of title to allow it to extend fully across content area */
+    .l-3-col-master .page-header {
+        padding-right: 0;
+    }
+}
+/*--------------------------------------------
+END Clinical Podcast page customizations
+--------------------------------------------
+START Vaccine Scheduler Styles
+-------------------------------------------- */
 /* Vaccine Scheduler */
 @media (max-width: 1100px) {
     form[action*="/coronavirus/vaccine/vaccine-scheduling"] .content-nav-link--toggle {
@@ -1103,7 +1134,9 @@ END New Font test
  {
         display: none;
  }
-
+/*--------------------------------------------
+END T Vaccine Scheduler Styles
+-------------------------------------------- */
 </style>
 
    <!-- SCID: {FD0EBF78-EF46-4BA5-8F0A-BAA3C8EE3D06}-->
