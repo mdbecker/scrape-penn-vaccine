@@ -71,25 +71,37 @@ START default anchor tag overrides
  - - higher contrast using bold
  - - adding underlines
  */
-  .rtf p a,
- .rtf li a
-    {color: #4d9fe2; text-decoration: underline; font-weight: bold;}
- .rtf p a:hover,
- .rtf li a:hover
-    {color: #7bbff7; text-decoration: underline;}
- .rtf p a:visited,
- .rtf li a:visited
-    {color: #9e2475; text-decoration: underline; font-weight: bold;}
- .rtf .big-list li a,
- .rtf .tall-list li a
-    {text-decoration: underline; font-weight: normal;}
+.rtf p a,
+.rtf li a {
+    color: #4d9fe2;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.rtf p a:hover,
+.rtf li a:hover {
+    color: #7bbff7;
+    text-decoration: underline;
+}
+.rtf p a:visited,
+.rtf li a:visited {
+    color: #9e2475;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.rtf .big-list li a,
+.rtf .tall-list li a {
+    text-decoration: underline;
+    font-weight: normal;
+}
 .rtf a.btn.btn--blue.btn--small {
-    font-weight: normal;}
+    font-weight: normal;
+}
 /* special link styles */
- .rtf p a.link-more-e:link,
- .rtf p a.link-more-e:visited,
- .rtf p a.link-more-e:hover {
-    text-decoration: none; font-weight: bold;
+.rtf p a.link-more-e:link,
+.rtf p a.link-more-e:visited,
+.rtf p a.link-more-e:hover {
+    text-decoration: none;
+    font-weight: bold;
 }
 .landing-list__item-copy h2 a,
 .landing-list__item-copy h3 a,
@@ -101,17 +113,20 @@ START default anchor tag overrides
 .landing-list__item-copy h3 a:visited,
 .general-list__item-text h2 a:visited,
 .general-list__item-text h3 a:visited {
-   color: #9e2475;
+    color: #9e2475;
 }
-.text-grid__item-title>a {
+.text-grid__item-title > a {
     text-decoration: underline;
 }
 /* Exceptions */
 .rtf p a.btn,
-.rtf p a.btn:hover
-    {text-decoration: none;}
- .rtf p a.btn:visited
-    {color: #fff; text-decoration: none;}
+.rtf p a.btn:hover {
+    text-decoration: none;
+}
+.rtf p a.btn:visited {
+    color: #fff;
+    text-decoration: none;
+}
 
 /* -----------------------------------------
 END default anchor tag overrides
@@ -125,7 +140,7 @@ END default anchor tag overrides
     display: block;
     font-weight: normal;
     font-size: smaller;
-    }
+}
 
 /* -----------------------------------------
 START Blog CTA updates
@@ -134,7 +149,7 @@ div.pm-blog-cta {
     margin: 15px 0px;
     width: 100%;
     clear: both;
-    overflow:hidden;
+    overflow: hidden;
 }
 div.pm-blog-cta a {
     float: left;
@@ -142,22 +157,23 @@ div.pm-blog-cta a {
     width: 48%;
     color: #ffffff;
     background-color: #3393cf;
-    background-image: linear-gradient(to bottom,#4f9cd5 0,#3c87c9 100%);
+    background-image: linear-gradient(to bottom, #4f9cd5 0, #3c87c9 100%);
     font-size: 18px;
     padding: 12px 30px;
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 1.2em;
-    font-family: HelveticaNeue-Medium,"Helvetica Neue Medium","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: HelveticaNeue-Medium, "Helvetica Neue Medium", "Helvetica Neue",
+        Helvetica, Arial, sans-serif;
     border: 0;
     border-radius: 6px;
     vertical-align: middle;
 }
 div.pm-blog-cta a:nth-child(1) {
-    margin-right:20px;
+    margin-right: 20px;
 }
 div.pm-blog-cta a:nth-child(2) {
-    margin-right:0px;
+    margin-right: 0px;
 }
 div.pm-blog-cta a:hover {
     background-color: #3393cf;
@@ -166,8 +182,8 @@ div.pm-blog-cta a:hover {
 }
 @media screen and (max-width: 675px) {
     div.pm-blog-cta a {
-       width:100%;
-        }
+        width: 100%;
+    }
 }
 /* -----------------------------------------
 END Blog CTA updates
@@ -175,36 +191,45 @@ END Blog CTA updates
 /* --------------------------------------------
 START Pull Quote styles
 -------------------------------------------- */
+.pm-pullquote {
+    width: 50%;
+    background-color: #eaeae8;
+    margin: 20px;
+    border-radius: 20px;
+}
+.pm-pullquote-right {
+    float: right;
+}
+.pm-pullquote-left {
+    float: left;
+}
+
+@media screen and (max-width: 675px) {
     .pm-pullquote {
-        width: 50%;
-        background-color: #eaeae8;
-        margin: 20px;
-        border-radius: 20px;
+        width: 100%;
+        margin: 20px 0px;
     }
-    .pm-pullquote-right {float: right;}
-    .pm-pullquote-left {float: left;}
+}
 
-    @media screen and (max-width: 675px) {.pm-pullquote {width:100%;margin: 20px 0px;}}
-
-    .pm-pullquote p {
-        font-size: 1.4em;
-        line-height: 1.35em;
-        font-family: serif;
-        font-weight: normal;
-        font-style: italic;
-        padding: 15px 20px;
-    }
-    .pm-pullquote span.pm-pullquote-author {
-        display: block;
-        padding: 0px;
-        margin: 0px;
-        text-align: right;
-        font-style: normal;
-    }
-    .cch-in-page-callout,
-    .pm-in-page-callout {
-        padding-top: 20px !important;
-    }
+.pm-pullquote p {
+    font-size: 1.4em;
+    line-height: 1.35em;
+    font-family: serif;
+    font-weight: normal;
+    font-style: italic;
+    padding: 15px 20px;
+}
+.pm-pullquote span.pm-pullquote-author {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    font-style: normal;
+}
+.cch-in-page-callout,
+.pm-in-page-callout {
+    padding-top: 20px !important;
+}
 
 /* --------------------------------------------
 END Pull Quote styles
@@ -215,46 +240,41 @@ START Brand Campaign styles
 -------------------------------------------- */
 
 /* Brand Campaign fonts */
-    .rtf p.ProximaNova-Bold {
+.rtf p.ProximaNova-Bold {
     font-family: ProximaNova-Bold;
-    }
-    .rtf p.ProximaNova-Medium {
+}
+.rtf p.ProximaNova-Medium {
     font-family: ProximaNova-Medium;
-    }
+}
 
-
-    @media screen and (max-width: 675px) {
-      .rtf h2.brand-camp-title,
-      h2.brand-camp-title,
-      .brand-camp-title
-      {
+@media screen and (max-width: 675px) {
+    .rtf h2.brand-camp-title,
+    h2.brand-camp-title,
+    .brand-camp-title {
         text-transform: uppercase;
-        font-family: 'proximanova-bold';
-        letter-spacing: .2em;
+        font-family: "proximanova-bold";
+        letter-spacing: 0.2em;
         color: #999;
-      }
-      .rtf h2.brand-camp-title .variant,
-      h2.brand-camp-title .variant,
-      .brand-camp-title .variant
-      {
-        color: #333;
-      }
     }
-      .rtf h2.brand-camp-title,
-      h2.brand-camp-title,
-      .brand-camp-title
-      {
-        text-transform: uppercase;
-        font-family: 'proximanova-bold';
-        letter-spacing: .2em;
-        color: #999;
-      }
-      .rtf h2.brand-camp-title .variant,
-      h2.brand-camp-title .variant,
-      .brand-camp-title .variant
-      {
+    .rtf h2.brand-camp-title .variant,
+    h2.brand-camp-title .variant,
+    .brand-camp-title .variant {
         color: #333;
-      }
+    }
+}
+.rtf h2.brand-camp-title,
+h2.brand-camp-title,
+.brand-camp-title {
+    text-transform: uppercase;
+    font-family: "proximanova-bold";
+    letter-spacing: 0.2em;
+    color: #999;
+}
+.rtf h2.brand-camp-title .variant,
+h2.brand-camp-title .variant,
+.brand-camp-title .variant {
+    color: #333;
+}
 
 /* --------------------------------------------
 END Brand Campaign styles
@@ -263,11 +283,11 @@ END Brand Campaign styles
 START "People" template styles
 -------------------------------------------- */
 /*  PREVENT LONG LINES FROM GETTING HIDDEN  */
-    @media (min-width: 676px) {
-        .bio-list--two-col {
-            overflow-wrap: break-word;
-        }
+@media (min-width: 676px) {
+    .bio-list--two-col {
+        overflow-wrap: break-word;
     }
+}
 /* --------------------------------------------
 END "People" template styles
 -------------------------------------------- */
@@ -281,38 +301,38 @@ START Jump link and target styles
     -  Target link id name needs to include the string "goto".
     -  Added pseudo anchors for accordions
 --------------------------------------------------- */
+[id*="goto"]:before,
+a.pseudo-anchor:before {
+    display: block;
+    content: " ";
+    margin-top: -160px;
+    height: 160px;
+    visibility: hidden;
+    pointer-events: none;
+}
+@media (max-width: 1101px) {
     [id*="goto"]:before,
     a.pseudo-anchor:before {
-      display: block;
-      content: " ";
-      margin-top: -160px;
-      height: 160px;
-      visibility: hidden;
-      pointer-events: none;
+        margin-top: -30px;
+        height: 30px;
     }
-    @media (max-width: 1101px) {
-        [id*="goto"]:before,
-        a.pseudo-anchor:before {
-          margin-top: -30px;
-          height: 30px;
-        }
-    }
+}
 /*  -------- Target Accordions ---------
     - used when linking to a specific section of accordion page
     - uses previous declarations (HASH LINK POSITIONING) for scroll positioning
     -------------------------------------  */
-    /* opens targeted accordion section */
-    a:target + section .accordion__item-inner {
-        display: block;
-    }
-    /* adds gold border to targeted accordion section */
-    a:target + section {
-        border: 2px solid #C2B410;
-    }
-    /* Changes "+" to "-" in targeted section */
-    a:target + section .accordion__item-title>a {
-         background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTQgMTQiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiPjxwYXRoIGQ9Ik0gMTIgNyBMIDIgNyIgc3Ryb2tlPSIjNjQ1ZDVmIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48L3N2Zz4=);
-    }
+/* opens targeted accordion section */
+a:target + section .accordion__item-inner {
+    display: block;
+}
+/* adds gold border to targeted accordion section */
+a:target + section {
+    border: 2px solid #c2b410;
+}
+/* Changes "+" to "-" in targeted section */
+a:target + section .accordion__item-title > a {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMTQgMTQiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiNmZmZmZmYwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQiIGhlaWdodD0iMTQiPjxwYXRoIGQ9Ik0gMTIgNyBMIDIgNyIgc3Ryb2tlPSIjNjQ1ZDVmIiBzdHJva2Utd2lkdGg9IjIiIGZpbGw9Im5vbmUiLz48L3N2Zz4=);
+}
 /* --------------------------------------- */
 /* --------------------------------------------
 END Jump link and target styles
@@ -322,12 +342,12 @@ END Jump link and target styles
 START Global alert styles
 -------------------------------------------- */
 /* adds hz rule between alerts */
-    .alert__item-text.alert-2 {
-        border-top: 1px solid #ccc;
-        margin-top: 1rem;
-        padding-top: 1rem;
-        display: block;
-    }
+.alert__item-text.alert-2 {
+    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    display: block;
+}
 
 /* --------------------------------------------
 END Global alert styles
@@ -336,23 +356,23 @@ END Global alert styles
 START Temp fix for home page alert (fixes weird padding )
 -------------------------------------------- */
 
-    @media (max-width: 1100px) {
+@media (max-width: 1100px) {
     .alert .l-contain {
         padding-bottom: 10px;
         padding-top: 0px;
-      }
     }
+}
 /* --------------------------------------------
 END Temp fix for home page alert (fixes weird padding )
 -------------------------------------------- */
 /* --------------------------------------------
 START Temp hide of links to missing landing pages
 -------------------------------------------- */
-    div.pm-blog-cta a[href*="https://lp.pennmedicine.org/msk/joint-knee-arthritis/"],
+div.pm-blog-cta a[href*="https://lp.pennmedicine.org/msk/joint-knee-arthritis/"],
     div.pm-blog-cta a[href*="https://lp.pennmedicine.org/cardiac/tavr/"]
-     {
-        display: none;
-    }
+{
+    display: none;
+}
 /* --------------------------------------------
 END Temp hide of links to missing landing pages
 -------------------------------------------- */
@@ -361,25 +381,29 @@ START DocsASAP CTA on provider profile page styling
 -------------------------------------------- */
 /* DocsASAP CTA - profile */
 
-    @media  (max-width: 840px)  {
-        .fad-profile__text .fad-btn--modal.js-epic-btn[href*="//docasap.com"] {
-            display: block;
-        }
+@media (max-width: 840px) {
+    .fad-profile__text .fad-btn--modal.js-epic-btn[href*="//docasap.com"]
+    {
+        display: block;
     }
-    @media  (min-width: 839px)  {
-        .fad-profile__text .fad-btn--modal.js-epic-btn[href*="//docasap.com"] {
-            display: none;
-        }
+}
+@media (min-width: 839px) {
+    .fad-profile__text .fad-btn--modal.js-epic-btn[href*="//docasap.com"]
+    {
+        display: none;
     }
+}
 /* --------------------------------------------
 End DocsASAP CTA on provider profile page styling
 -------------------------------------------- */
 /* --------------------------------------------
 START mystery DF styling (why we want to hide whatever is remains to be investigated)
 -------------------------------------------- */
-    @media print {
-      #df { display: none; }
+@media print {
+    #df {
+        display: none;
     }
+}
 /* --------------------------------------------
 End mystery DF styling
 -------------------------------------------- */
@@ -387,9 +411,17 @@ End mystery DF styling
 START Find a Doctor page styling
 -------------------------------------------- */
 /* Resize Map in new FAD locations results page -Added by KVH - 11-05-20 */
-    .content-primary .fad-gmap {
-        height: 30vh;
-    }
+.content-primary .fad-gmap {
+    height: 30vh;
+}
+.content-primary .fad-location__map {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+@media (max-width: 1300px) {
     .content-primary .fad-location__map {
         width: 100%;
         margin-left: auto;
@@ -397,55 +429,47 @@ START Find a Doctor page styling
         left: 0;
         right: 0;
     }
-    @media (max-width: 1300px) {
-        .content-primary .fad-location__map {
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            left: 0;
-            right: 0;
-        }
-    }
+}
 /* Re-style narrow filters to make prominent on results page -Added by KVH - 11-09-20 */
-    .fad-content .fad-narrow-options .fad-btn--pill {
-        padding: 10px 40px 10px 24px;
-        border: 1px solid rgba(0,102,204,.3);
-        background-color: rgba(0,102,204,1);
-        color: #fff !important;
-    }
-    .fad-content .fad-narrow-options .fad-btn--pill.this-is-active {
-        padding: 10px 40px 10px 24px;
-        border: 2px solid green;
-        background-color: #fff;
-        color: green !important;
-    }
-    .fad-content .fad-narrow-options .fad-btn--pill:after {
-        content: "+";
-        font-size: 150%;
-        position: absolute;
-        top: 0;
-        background-color: #fff;
-        border-radius: 50%;
-        border: 4px solid rgba(0,102,204,1);
-        color: rgba(0,102,204,1);
-        height: 34px;
-        width: 34px;
-        right: 0;
-        text-align: center;
-        line-height: 100%;
-    }
-    .fad-content .fad-narrow-options .fad-btn--pill.this-is-active:after {
-        content: "\2713";
-        top: 50%;
-        background-color: rgba(0, 128, 0, .2);
-        color: green;
-        line-height: 125%;
-        font-weight: bold;
-        border: 1px solid rgba(0, 128, 0, 0);
-        width: 28px;
-        height: 28px;
-        right: 4px;
-      }
+.fad-content .fad-narrow-options .fad-btn--pill {
+    padding: 10px 40px 10px 24px;
+    border: 1px solid rgba(0, 102, 204, 0.3);
+    background-color: rgba(0, 102, 204, 1);
+    color: #fff !important;
+}
+.fad-content .fad-narrow-options .fad-btn--pill.this-is-active {
+    padding: 10px 40px 10px 24px;
+    border: 2px solid green;
+    background-color: #fff;
+    color: green !important;
+}
+.fad-content .fad-narrow-options .fad-btn--pill:after {
+    content: "+";
+    font-size: 150%;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 4px solid rgba(0, 102, 204, 1);
+    color: rgba(0, 102, 204, 1);
+    height: 34px;
+    width: 34px;
+    right: 0;
+    text-align: center;
+    line-height: 100%;
+}
+.fad-content .fad-narrow-options .fad-btn--pill.this-is-active:after {
+    content: "\2713";
+    top: 50%;
+    background-color: rgba(0, 128, 0, 0.2);
+    color: green;
+    line-height: 125%;
+    font-weight: bold;
+    border: 1px solid rgba(0, 128, 0, 0);
+    width: 28px;
+    height: 28px;
+    right: 4px;
+}
 /*  -Added by KVH - 11-09-20 */
 @media (min-width: 676px) {
     .fad-search__suggested-label strong {
@@ -454,78 +478,78 @@ START Find a Doctor page styling
 }
 
 /* Add spacing below and bold test of Narrow filter label -Added by KVH - 11-11-20 */
-    .fad-content .fad-narrow-options__heading {
-        margin-bottom: 16px;
-        font-weight: bold;
-    }
+.fad-content .fad-narrow-options__heading {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
 /* Temp fix to include missing carats on mobile (and hide them on desktop) -Added by KVH - 12/11/20 */
+.fad-search__suggested-list a:after {
+    display: block !important;
+}
+@media (min-width: 676px) {
     .fad-search__suggested-list a:after {
-            display: block !important;
-        }
-    @media (min-width:676px) {
-        .fad-search__suggested-list a:after {
-            display: none !important;
-        }
+        display: none !important;
     }
+}
 /* Temp fix to include missing margin between search box and filters box  -Added by KVH - 12/11/20 */
-    .fad-content__results {
-        margin-top: 30px;
-    }
+.fad-content__results {
+    margin-top: 30px;
+}
 /* adding spacing below suggested links */
-    .fad-search__suggested {
-        margin-bottom: 70px;
-    }
+.fad-search__suggested {
+    margin-bottom: 70px;
+}
 /* adding spacing between suggested links and search box on mobile -Added by KVH - 12/11/20 */
+.fad-search__suggested {
+    margin-top: 25px !important;
+}
+@media (min-width: 675px) {
     .fad-search__suggested {
-        margin-top: 25px !important;
+        margin-top: 15px;
     }
-    @media (min-width:675px) {
-        .fad-search__suggested {
-            margin-top: 15px;
-        }
-    }
+}
 /* remove copy bolding and border to reduce prominence of 911 alert -Added by KVH - 04/12/21 */
-    .fad-content  .fad-message--emergency {
-        border: none;
-        font-weight: normal;
-    }
+.fad-content .fad-message--emergency {
+    border: none;
+    font-weight: normal;
+}
 /* Hiding FAD CTAs for Radiologists */
 /* Profile pages */
-    form[action*="/providers"] .fad-profile__lead a[href="tel:2156624000"],
-    form[action*="/providers"] .fad-profile__lead a[href="tel:2156628000"],
-    form[action*="/providers"] .fad-profile__lead a[href="tel:2158293000"],
-    form[action*="/providers"] .fad-profile__lead a[href="tel:6104315000"],
-    form[action*="/providers"] .fad-profile__lead a[href="tel:6109022000"] {
-        display: none;
-        }
+form[action*="/providers"] .fad-profile__lead a[href="tel:2156624000"],
+form[action*="/providers"] .fad-profile__lead a[href="tel:2156628000"],
+form[action*="/providers"] .fad-profile__lead a[href="tel:2158293000"],
+form[action*="/providers"] .fad-profile__lead a[href="tel:6104315000"],
+form[action*="/providers"] .fad-profile__lead a[href="tel:6109022000"] {
+    display: none;
+}
 /* Results pages */
-    form[action*="/providers"] .fad-result__inner a[href="tel:2156624000"],
-    form[action*="/providers"] .fad-result__inner a[href="tel:2156628000"],
-    form[action*="/providers"] .fad-result__inner a[href="tel:2158293000"],
-    form[action*="/providers"] .fad-result__inner a[href="tel:6104315000"],
-    form[action*="/providers"] .fad-result__inner a[href="tel:6109022000"] {
-        display: none;
-        }
+form[action*="/providers"] .fad-result__inner a[href="tel:2156624000"],
+form[action*="/providers"] .fad-result__inner a[href="tel:2156628000"],
+form[action*="/providers"] .fad-result__inner a[href="tel:2158293000"],
+form[action*="/providers"] .fad-result__inner a[href="tel:6104315000"],
+form[action*="/providers"] .fad-result__inner a[href="tel:6109022000"] {
+    display: none;
+}
 
 /* Expertise toggle updates */
-    .fad-rtf a.fad-detail__terms__list--toggle {
-        border: 1px solid #3277B8;
-        padding: .5rem;
-        border-radius: .35rem;
-        background-color: rgba(255,255,255, 1);
-        display: inline-block;
-        font-weight: bold;
-        text-decoration: none;
-        position: relative;
-        left: 1rem;
-    }
-    .fad-rtf a.fad-detail__terms__list--toggle.this-is-active:after {
-        content: "[ - ]";
-    }
-    .fad-rtf a.fad-detail__terms__list--toggle:after {
-        content: "[ + ]";
-        margin-left: 1rem;
-    }
+.fad-rtf a.fad-detail__terms__list--toggle {
+    border: 1px solid #3277b8;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+    background-color: rgba(255, 255, 255, 1);
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    left: 1rem;
+}
+.fad-rtf a.fad-detail__terms__list--toggle.this-is-active:after {
+    content: "[ - ]";
+}
+.fad-rtf a.fad-detail__terms__list--toggle:after {
+    content: "[ + ]";
+    margin-left: 1rem;
+}
 
 /* Add hint text that appears above "find" input field */
 div.fad-search__wrapper:before {
@@ -536,9 +560,9 @@ div.fad-search__wrapper:before {
     left: 60px;
     background-color: #ddd;
     color: #333;
-    padding: .5rem 1rem .5rem;
-    border-radius: .5rem;
-    border-top-right-radius: .5rem;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
     font-size: 14px;
 }
 /* Add down arrow on bottom of hint text bubble that appears above "find" input field */
@@ -554,7 +578,7 @@ div.fad-search__wrapper:after {
     border-top: 20px solid #ddd;
 }
 /* Add space to allow for hint bubble between emergency message and search box */
-.fad-content  .fad-message--emergency {
+.fad-content .fad-message--emergency {
     margin-bottom: 80px;
     font-size: 14px;
 }
@@ -568,19 +592,23 @@ div.fad-search__wrapper:after {
 }
 /* hide placeholder text in Find field */
 div.fad-search__wrapper input::placeholder {
-  color: #fff;
+    color: #fff;
 }
-div.fad-search__wrapper input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #fff;
+div.fad-search__wrapper input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
 }
-div.fad-search__wrapper input::-moz-placeholder { /* Firefox 19+ */
-  color: #fff;
+div.fad-search__wrapper input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
 }
-div.fad-search__wrapper input::-ms-input-placeholder { /* IE 10+ */
-  color: #fff;
+div.fad-search__wrapper input::-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
 }
-div.fad-search__wrapper input::-moz-placeholder { /* Firefox 18- */
-  color: #fff;
+div.fad-search__wrapper input::-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
 }
 /* Hides hint bubble if not initial search page ("keyword" is only present in form action on results pages) */
 form[action*="keyword"] div.fad-search__wrapper:before,
@@ -595,45 +623,45 @@ START Global Alert styling
 -------------------------------------------- */
 /* Hide 'Covid Calls' alert by default */
 /* this is overriden on COVID section pages where the COVID alert is hidden */
-    .content-wrap.js-content-wrap.cf .l-global-alert:nth-of-type(2) {
+.content-wrap.js-content-wrap.cf .l-global-alert:nth-of-type(2) {
     display: none;
-    }
+}
 
 /* --------------------------------------------
 START special link styling
 -------------------------------------------- */
 /* allow email addresses to break into multiple lines */
-    a[href*="mailto:"] {
+a[href*="mailto:"] {
     overflow-wrap: anywhere;
-    }
+}
 /* make myPennMed link bold */
-    .nav-utility a[href*="secure.mypennmedicine.org"] {
-        font-weight: bold;
-    }
+.nav-utility a[href*="secure.mypennmedicine.org"] {
+    font-weight: bold;
+}
 /* underline page error links  */
-    .page-error .page-error__message p a {
-        text-decoration: underline;
-    }
+.page-error .page-error__message p a {
+    text-decoration: underline;
+}
 /* --------------------------------------------
 END special link styling
 ------------------------------------------------
 START Masthead site search styles (Coveo)
 -------------------------------------------- */
 /* darken input border */
-    .content-primary .CoveoSearchbox .magic-box,
-    .global-search-overlay .CoveoSearchbox .magic-box,
-    .l-header .CoveoSearchbox .magic-box,
-    .nav-wrap .CoveoSearchbox .magic-box {
-        border: 1px solid #aaa;
-    }
+.content-primary .CoveoSearchbox .magic-box,
+.global-search-overlay .CoveoSearchbox .magic-box,
+.l-header .CoveoSearchbox .magic-box,
+.nav-wrap .CoveoSearchbox .magic-box {
+    border: 1px solid #aaa;
+}
 /* make submit button icon white */
-    .coveo-search-button-svg {
-        color: #fff;
-    }
+.coveo-search-button-svg {
+    color: #fff;
+}
 /* make submit button background blue */
-    .CoveoSearchbox .CoveoSearchButton {
-        background-color: #549ed4;
-    }
+.CoveoSearchbox .CoveoSearchButton {
+    background-color: #549ed4;
+}
 /* get rid of right margin on search box in mobile */
 @media (max-width: 480px) {
     .CoveoSearchInterface .CoveoSearchbox {
@@ -648,33 +676,36 @@ START general styling fixes and updates
  !   --  these need to be made in main.css   --  !
 -------------------------------------------- */
 /*  remove border and background from arrow buttons on slider */
-    .story-slider.has-arrows .story-slider__next,
-    .story-slider.has-arrows .story-slider__prev {
-        border: none;
-        background-color: transparent;
-    }
+.story-slider.has-arrows .story-slider__next,
+.story-slider.has-arrows .story-slider__prev {
+    border: none;
+    background-color: transparent;
+}
 /* update H2 heading colors when an .h3 class is applied */
-    h2.h3, .rtf h2.h3 {
-        color: #393939;
+h2.h3,
+.rtf h2.h3 {
+    color: #393939;
+}
+@media (min-width: 676px) {
+    h2.h3,
+    .rtf h2.h3 {
+        font-size: 28px;
     }
-    @media (min-width: 676px) {
-        h2.h3, .rtf h2.h3 {
-            font-size: 28px;
-        }
+}
+@media (max-width: 675px) {
+    h2.h3,
+    .rtf h2.h3 {
+        font-size: 20px;
     }
-    @media (max-width: 675px) {
-        h2.h3, .rtf h2.h3 {
-            font-size: 20px;
-        }
-    }
+}
 /* Add slow scroll for anchor links */
-    html {
-      scroll-behavior: smooth;
-    }
+html {
+    scroll-behavior: smooth;
+}
 /* orphan style override */
-    .fad-provider-bio__ul--links a.fad-link--pdf  {
-    display:none;
-    }
+.fad-provider-bio__ul--links a.fad-link--pdf {
+    display: none;
+}
 /* removing left padding from alert messages */
 @media (min-width: 1101px) {
     .alert__item {
@@ -686,21 +717,25 @@ END general styling fixes and updates
 -----------------------------------------------
  START temp hacks for Cherry Hill practices
 --------------------------------------------*/
-form[action*="/practices/radiation-oncology-cherry-hill"] .fad-result__address.fad-mb-1.fad-rtf:after,
-form[action*="/practices/infusion-services-cherry-hill"] .fad-result__address.fad-mb-1.fad-rtf:after
- {
+form[action*="/practices/radiation-oncology-cherry-hill"]
+    .fad-result__address.fad-mb-1.fad-rtf:after,
+form[action*="/practices/infusion-services-cherry-hill"]
+    .fad-result__address.fad-mb-1.fad-rtf:after {
     display: block;
     content: "A facility of Penn Presbyterian Medical Center";
     font-size: 80%;
 }
-form[action*="/practices"] a[href*="/practices/radiation-oncology-cherry-hill"] .fad-result__address.fad-mb-1:after,
-form[action*="/practices"] a[href*="/practices/infusion-services-cherry-hill"] .fad-result__address.fad-mb-1:after
- {
+form[action*="/practices"]
+    a[href*="/practices/radiation-oncology-cherry-hill"]
+    .fad-result__address.fad-mb-1:after,
+form[action*="/practices"]
+    a[href*="/practices/infusion-services-cherry-hill"]
+    .fad-result__address.fad-mb-1:after {
     display: block;
     content: "A facility of Penn Presbyterian Medical Center";
     color: #666;
     font-size: 80%;
-    padding-top: .25rem;
+    padding-top: 0.25rem;
 }
 /* --------------------------------------------
 END temp hacks for Cherry Hill practices
@@ -708,8 +743,8 @@ END temp hacks for Cherry Hill practices
 START Audio player customization
 -------------------------------------------- */
 /* gives AUDIO element blue background in  'webkit' browsers */
-    audio::-webkit-media-controls-panel {
-        background: #BBDDFC;
+audio::-webkit-media-controls-panel {
+    background: #bbddfc;
 }
 /*--------------------------------------------
 END Audio player customization
@@ -717,17 +752,22 @@ END Audio player customization
 START Clinical Podcast page customizations
 -------------------------------------------- */
 /* HIde the right column content area */
-form[action*="/for-health-care-professionals/for-physicians/physician-education-and-resources/physician-interviews/2"] section.content-secondary {
+form[action*="/for-health-care-professionals/for-physicians/physician-education-and-resources/physician-interviews/2"]
+    section.content-secondary {
     display: none;
 }
 @media (min-width: 1101px) {
-/* have main content area expand into the space where the right column used to be in desktop */
-    form[action*="/for-health-care-professionals/for-physicians/physician-education-and-resources/physician-interviews/2"] .l-3-col-master .content-primary {
+    /* have main content area expand into the space where the right column used to be in desktop */
+    form[action*="/for-health-care-professionals/for-physicians/physician-education-and-resources/physician-interviews/2"]
+        .l-3-col-master
+        .content-primary {
         padding-right: 0;
         width: 76%;
     }
-/* remove extra padding on right of title to allow it to extend fully across content area */
-    form[action*="/for-health-care-professionals/for-physicians/physician-education-and-resources/physician-interviews/2"] .l-3-col-master .page-header {
+    /* remove extra padding on right of title to allow it to extend fully across content area */
+    form[action*="/for-health-care-professionals/for-physicians/physician-education-and-resources/physician-interviews/2"]
+        .l-3-col-master
+        .page-header {
         padding-right: 0;
     }
 }
@@ -738,15 +778,15 @@ START Vaccine Scheduler Styles
 -------------------------------------------- */
 /* Vaccine Scheduler */
 @media (max-width: 1100px) {
-    form[action*="/coronavirus/vaccine/vaccine-scheduling"] .content-nav-link--toggle {
+    form[action*="/coronavirus/vaccine/vaccine-scheduling"]
+        .content-nav-link--toggle {
         display: none;
     }
 }
-    form[action*="/coronavirus/vaccine/vaccine-scheduling"] .content-nav,
-    form[action*="/coronavirus/vaccine/vaccine-scheduling"] .l-global-alert
- {
-        display: none;
- }
+form[action*="/coronavirus/vaccine/vaccine-scheduling"] .content-nav,
+form[action*="/coronavirus/vaccine/vaccine-scheduling"] .l-global-alert {
+    display: none;
+}
 /*--------------------------------------------
 END Vaccine Scheduler Styles
 ---------------------------------------------
@@ -754,10 +794,10 @@ START DocASAP CTA styles
 -------------------------------------------- */
 /* change background color of CTA button to olive */
 a[href*="docasap.com"].btn--blue {
-    background-color: #83850C;
-    background-image: linear-gradient(to bottom,#83850C 0,#6c6e0a 100%);
- }
- /* change icon of CTA button to calendar graphic */
+    background-color: #83850c;
+    background-image: linear-gradient(to bottom, #83850c 0, #6c6e0a 100%);
+}
+/* change icon of CTA button to calendar graphic */
 a[href*="docasap.com"].cta--btn:before {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzMgMzMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMzIDMzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGRkZGRjtzdHJva2U6IzAwMDAwMDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9LnN0MXtmaWxsOiNGRkZGRkY7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTAsMCIvPjxjaXJjbGUgY2xhc3M9InN0MSIgY3g9IjkuMyIgY3k9IjQuOCIgcj0iMS4zIi8+PGNpcmNsZSBjbGFzcz0ic3QxIiBjeD0iMTYuNSIgY3k9IjQuOCIgcj0iMS4zIi8+PGNpcmNsZSBjbGFzcz0ic3QxIiBjeD0iMjMuOCIgY3k9IjQuOCIgcj0iMS4zIi8+PHBhdGggY2xhc3M9InN0MSIgZD0iTTExLjEsMTIuOWg0LjZWMTdoLTQuNkwxMS4xLDEyLjl6IE0xNy4zLDEyLjloNC42VjE3aC00LjZWMTIuOXogTTIzLjQsMTIuOUgyOFYxN2gtNC42VjEyLjl6IE01LDE4LjRoNC42djQuMUg1VjE4LjR6IE0xMS4xLDE4LjRoNC42djQuMWgtNC42TDExLjEsMTguNHogTTE3LjMsMTguNGg0LjZ2NC4xaC00LjZWMTguNHogTTIzLjQsMTguNEgyOHY0LjFoLTQuNlYxOC40eiBNNSwyMy44aDQuNnY0LjFINVYyMy44eiBNMTEuMSwyMy44aDQuNnY0LjFoLTQuNkwxMS4xLDIzLjh6IE0xNy4zLDIzLjhoNC42djQuMWgtNC42VjIzLjh6IE0yMy40LDIzLjhIMjh2NC4xaC00LjZWMjMuOHoiLz48cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjksMS41YzEuNCwwLDIuNSwxLjEsMi41LDIuNXYyNWMwLDEuNC0xLjEsMi41LTIuNSwyLjVINGMtMS40LDAtMi41LTEuMS0yLjUtMi41VjRjMC0xLjQsMS4xLTIuNSwyLjUtMi41SDI5IE0yOSwwSDRDMS44LDAsMCwxLjgsMCw0djI1YzAsMi4yLDEuOCw0LDQsNGgyNWMyLjIsMCw0LTEuOCw0LTRWNEMzMywxLjgsMzEuMiwwLDI5LDBMMjksMHoiLz48L3N2Zz4=);
     background-size: 30px;
@@ -777,8 +817,8 @@ form[action*="katalin-kariko"] ul.fad-list:after {
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 20px auto;
-    padding: .2rem 0 .2rem 30px;
-    margin-top: .75rem;
+    padding: 0.2rem 0 0.2rem 30px;
+    margin-top: 0.75rem;
 }
 /*--------------------------------------------
 END  TEMP Kariko styles
@@ -798,7 +838,7 @@ START  link icon adjustment
 .icon-rtf-video:after,
 .icon-rtf-word:after,
 .icon-rtf-youtube:after {
-    margin-left: .35rem
+    margin-left: 0.35rem;
 }
 /*---------------------------------------------
 END link icon adjustment
@@ -806,53 +846,77 @@ END link icon adjustment
 START youtube article spacing (makes spacing in an article tag better when a youtube video is featured)
 -------------------------------------------- */
 @media screen and (max-width: 675px) {
-article.youtube-spacing div div.grid_1-2 {width: 100%; }
-article.youtube-spacing div div.grid_2-2 {
-    width: 100%;
-    padding-top: 20px;
+    article.youtube-spacing div div.grid_1-2 {
+        width: 100%;
+    }
+    article.youtube-spacing div div.grid_2-2 {
+        width: 100%;
+        padding-top: 20px;
+    }
 }
+@media only screen and (min-width: 676px) and (max-width: 1310px) {
+    article.youtube-spacing div div.grid_1-2 {
+        width: 48%;
+        float: left;
+    }
+    article.youtube-spacing div div.grid_2-2 {
+        width: 48%;
+        float: right;
+    }
 }
- @media only screen and (min-width: 676px) and (max-width: 1310px){
-article.youtube-spacing div div.grid_1-2 {width: 48%; float: left;}
-article.youtube-spacing div div.grid_2-2 {width: 48%; float: right;}
-} 
- @media only screen and (min-width: 1311px){ 
-article.youtube-spacing div div.grid_1-2 {width: 50%; float: left;}
-article.youtube-spacing div div.grid_2-2 {width: 50%; float: right;}
+@media only screen and (min-width: 1311px) {
+    article.youtube-spacing div div.grid_1-2 {
+        width: 50%;
+        float: left;
+    }
+    article.youtube-spacing div div.grid_2-2 {
+        width: 50%;
+        float: right;
+    }
 }
 @media screen and (max-width: 675px) {
-article.youtube-spacing-small div div.grid_1-2 {width: 100%; }
-article.youtube-spacing-small div div.grid_2-2 {
-    width: 100%;
-    padding-top: 20px;
+    article.youtube-spacing-small div div.grid_1-2 {
+        width: 100%;
+    }
+    article.youtube-spacing-small div div.grid_2-2 {
+        width: 100%;
+        padding-top: 20px;
+    }
 }
-}
- @media only screen and (min-width: 676px) {
-article.youtube-spacing-small div div.grid_1-2 {width: 49%; float: left;}
-article.youtube-spacing-small div div.grid_2-2 {width: 49%; float: right;}
+@media only screen and (min-width: 676px) {
+    article.youtube-spacing-small div div.grid_1-2 {
+        width: 49%;
+        float: left;
+    }
+    article.youtube-spacing-small div div.grid_2-2 {
+        width: 49%;
+        float: right;
+    }
 }
 /*---------------------------------------------
 END youtube article spacing
 ---------------------------------------------
 START Close X on coronavirus info spacing
 -------------------------------------------- */
-@media (max-width: 599px){
-.alert__close {
-    bottom: -10px;
-    margin-left: -10px;
+@media (max-width: 599px) {
+    .alert__close {
+        bottom: -10px;
+        margin-left: -10px;
+    }
 }
-}
-@media only screen and (min-width: 1101px){
-.alert__close, [type=button].alert__close {
-    top: -7px;
-}
+@media only screen and (min-width: 1101px) {
+    .alert__close,
+    [type="button"].alert__close {
+        top: -7px;
+    }
 }
 /*---------------------------------------------
 END Close X on coronavirus info spacing
 ---------------------------------------------
 START add heading above DocASAP scheduling iframe
 -------------------------------------------- */
-.fad-detail__scheduling-embed.fad-detail__section.fad-mb-3-mq-medium-and-above.fad-has-toggle.js-this .fad-detail__body:before {
+.fad-detail__scheduling-embed.fad-detail__section.fad-mb-3-mq-medium-and-above.fad-has-toggle.js-this
+    .fad-detail__body:before {
     content: "Schedule an appointment now";
     display: block;
     color: #333;
@@ -865,16 +929,14 @@ END add heading above DocASAP scheduling iframe
 ---------------------------------------------
 START 911 message box (see 'make an appointment' page)
 -------------------------------------------- */
-    .message--emergency {
-        font-size: 14px;
-        border: none;
-        font-weight: normal;
-        padding: 15px 15px;
-        background-color: #FCEDED;
-        font-size: 18px;
-        color: #CE3F32 !important;
-        margin-top: -1rem !important;
-    }
+.rtf .message--emergency {
+    border: none;
+    font-weight: normal;
+    padding: 15px 15px;
+    background-color: #fceded;
+    font-size: 16px;
+    color: #ce3f32;
+}
 /* ---------------------------------------------
 END 911 message box (see 'make an appointment' page)
 -------------------------------------------- */
@@ -883,10 +945,8 @@ END 911 message box (see 'make an appointment' page)
 
 .content-masthead .content-masthead-plain {
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
-.content__region>h2,
+.content__region > h2,
 .h6,
 .hp-hero__title,
 .l-header__phone,
@@ -905,8 +965,6 @@ END 911 message box (see 'make an appointment' page)
 .text-grid--big-titles .text-grid__title,
 .thumb-list__section {
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
 .is-selected .pika-button,
 .is-today .pika-button,
@@ -920,73 +978,58 @@ END 911 message box (see 'make an appointment' page)
 .tabnav__toggle {
     font-family: Helvetica, Arial, sans-serif;
 
-
-    font-weight: 700
+    font-weight: 700;
 }
 .rtf blockquote p,
 blockquote,
 blockquote p {
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
 
 .link-more-w.link-more-w--lg {
     font-size: 24px;
     font-family: Helvetica, Arial, sans-serif;
 
-
     font-weight: 400;
     line-height: 26px;
 }
 .regular-weight {
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
-@media (max-width:1100px) {
+@media (max-width: 1100px) {
     .h1-main__title {
         font-family: Helvetica, Arial, sans-serif;
-
-
     }
 }
-@media (min-width:676px) {
+@media (min-width: 676px) {
     .h2,
     .rtf h2 {
         font-family: Helvetica, Arial, sans-serif;
-
-
     }
 }
-@media (min-width:1101px) {
+@media (min-width: 1101px) {
     .h1,
     .h1-main__title {
         font-family: Helvetica, Arial, sans-serif;
-
-
     }
 }
 .accordion .accordion__item-title {
     font-family: Helvetica, Arial, sans-serif;
 
-
     font-size: 16px;
-    margin: 0
+    margin: 0;
 }
 .addthisevent_dropdown {
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 0 0 4px 4px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
-    color: #645D5F;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    color: #645d5f;
     display: none;
     font-size: 14px;
     padding: 10px 30px;
     position: absolute;
     width: 100%;
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
 .author-list__label {
     margin-right: 12px;
@@ -995,58 +1038,46 @@ blockquote p {
     font-size: 15px;
     color: #635d5f;
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
 
-.cta-list-v2>li a {
+.cta-list-v2 > li a {
     font-family: Helvetica, Arial, sans-serif;
 
-
-    font-size: 16px
+    font-size: 16px;
 }
-@media (max-width:1100px) {
+@media (max-width: 1100px) {
     .nav__level1-toggle {
         background-position: -9999px;
-        color: #0059A3;
+        color: #0059a3;
         display: block;
         padding: 15px 60px 15px 28px;
         position: relative;
         font-family: Helvetica, Arial, sans-serif;
-
-
     }
-    .module-is-collapsed>.nav__level1-toggle,
-    .module-is-expanded>.nav__level1-toggle,
+    .module-is-collapsed > .nav__level1-toggle,
+    .module-is-expanded > .nav__level1-toggle,
     .nav__level1-toggle.nav-primary__level1-link {
         font-family: Helvetica, Arial, sans-serif;
 
-
-        font-weight: 700
+        font-weight: 700;
     }
 }
-.nav-breadcrumbs__level1>li:first-child .nav-breadcrumbs__toggle,
-.nav-breadcrumbs__level1>li:last-child .nav-breadcrumbs__toggle {
+.nav-breadcrumbs__level1 > li:first-child .nav-breadcrumbs__toggle,
+.nav-breadcrumbs__level1 > li:last-child .nav-breadcrumbs__toggle {
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
-.nav-breadcrumbs__level1>li.last-child .nav-breadcrumbs__toggle {
+.nav-breadcrumbs__level1 > li.last-child .nav-breadcrumbs__toggle {
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
-@media (max-width:1100px) {
-    .nav-wrap--divisions .nav-primary__level1>li>a {
+@media (max-width: 1100px) {
+    .nav-wrap--divisions .nav-primary__level1 > li > a {
         font-family: Helvetica, Arial, sans-serif;
 
-
         font-size: 16px;
-        font-weight: 400
+        font-weight: 400;
     }
     .nav-primary__departments-header {
         font-family: Helvetica, Arial, sans-serif;
-
 
         -ms-flex-align: center;
         align-items: center;
@@ -1057,54 +1088,44 @@ blockquote p {
         font-size: 21px;
         height: 60px;
         padding-left: 25px;
-        padding-right: 25px
+        padding-right: 25px;
     }
 }
 
-@media (min-width:1101px) {
-    .nav-primary__level1>li {
-        color: #2A3D83;
+@media (min-width: 1101px) {
+    .nav-primary__level1 > li {
+        color: #2a3d83;
         display: block;
         font-size: 18px;
         float: left;
         font-family: Helvetica, Arial, sans-serif;
-
-
     }
 }
-.portlet__list--locations>li {
+.portlet__list--locations > li {
     font-family: Helvetica, Arial, sans-serif;
 
-
-    line-height: 1.3em
+    line-height: 1.3em;
 }
 .portlet--spotlight-video .portlet__more {
     font-size: 15px;
-    color: #3277B8;
+    color: #3277b8;
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
 .portlet--social-basic .portlet__more {
-    color: #3277B8;
+    color: #3277b8;
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
 
 .preview-hero--big-txt p {
     font-size: 24px;
     font-family: Helvetica, Arial, sans-serif;
 
-
-    line-height: 1.2em
+    line-height: 1.2em;
 }
 .global-search-overlay .tt-suggestion {
     border-top: 0;
-    color: #FFF;
+    color: #fff;
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
 .thumb-grid__more-btn {
     background-color: #0a5680;
@@ -1113,18 +1134,15 @@ blockquote p {
     display: block;
     font-family: Helvetica, Arial, sans-serif;
 
-
     height: 50px;
     margin: 0 auto 3em;
     padding-bottom: 3px;
     text-align: center;
-    width: 200px
+    width: 200px;
 }
 .tabs--vertical-bold .tabs__title,
 .tagbar__label {
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
 .scfForm.scfForm .scfCaptchaLabel,
 .scfForm.scfForm .scfCheckBoxListLabel,
@@ -1144,32 +1162,26 @@ blockquote p {
 .scfForm.scfForm .scfSingleLineTextLabel,
 .scfForm.scfForm .scfSmsTelephoneLabel,
 .scfForm.scfForm .scfTelephoneLabel {
-    color: #645D5F;
+    color: #645d5f;
     float: none;
     font-size: 16px;
     line-height: 1.2em;
     margin-bottom: 6px;
     width: auto;
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
 
-@media (max-width:675px) {
+@media (max-width: 675px) {
     .scfForm.scfForm .scfTitleBorder {
         font-size: 23px;
         font-family: Helvetica, Arial, sans-serif;
-
-
     }
 }
 
-@media (min-width:676px) {
+@media (min-width: 676px) {
     .scfForm.scfForm .scfTitleBorder {
         font-size: 35px;
         font-family: Helvetica, Arial, sans-serif;
-
-
     }
 }
 .bio__title,
@@ -1180,7 +1192,7 @@ blockquote p {
 .event-listing .table__sort-toggle,
 .faculty-search__form .label,
 .faculty-search__form-browse-by,
-.faculty-search__sort-options li>.is-active,
+.faculty-search__sort-options li > .is-active,
 .filters__flyout--trigger,
 .filters__title,
 .form--basic .input-label,
@@ -1194,27 +1206,25 @@ blockquote p {
 .input-label,
 .l-header__select,
 .label,
-.letters>a.is-inactive,
+.letters > a.is-inactive,
 .link-more-e--lg,
 .list-links a,
 .modal__title,
 .nav-breadcrumbs a.is-active,
-.nav-primary__level2>li,
+.nav-primary__level2 > li,
 .nav-quick__link,
 .nav__button,
 .person-list__phone,
-.portlet__list>li,
+.portlet__list > li,
 .rtf h4,
 .rtf h5,
 .scfForm.scfForm .scfSubmitButton,
-.select-wrap>.select,
-.select-wrap>select,
+.select-wrap > .select,
+.select-wrap > select,
 .story-slider--more-stories .story-slider__story-title,
 .table--events .table__col--title a,
 .table__sort-toggle {
     font-family: Helvetica, Arial, sans-serif;
-
-
 }
 
 .bio__info .link-arrow,
@@ -1222,21 +1232,21 @@ blockquote p {
 .cta--img .cta__text,
 .event-date--sm .event-date__day,
 .faculty-search__sort-by,
-.form--basic input[type=checkbox]+label,
-.form--basic input[type=checkbox]+span,
-.form--basic input[type=radio]+label,
-.form--basic input[type=radio]+span,
+.form--basic input[type="checkbox"] + label,
+.form--basic input[type="checkbox"] + span,
+.form--basic input[type="radio"] + label,
+.form--basic input[type="radio"] + span,
 .h2-main__link .h2-main__title,
 .h2-main__title--with-links a,
 .h3,
 .l-header-global-cta__phone-sub,
 .l-header-global-cta__title,
-.letters>a,
+.letters > a,
 .link-more-e,
 .link-more-w,
 .link-rtf-more,
 .nav-breadcrumbs,
-.nav-wrap--departments .nav-primary__level2>li,
+.nav-wrap--departments .nav-primary__level2 > li,
 .pika-single,
 .pika-table abbr,
 .portlet--cta-basic .portlet__note,
@@ -1268,13 +1278,12 @@ blockquote p {
 .story-slider--related .story-slider__story-title,
 .tabs__toggle,
 .text-grid--light .text-grid__item-title,
-.text-grid--light .text-grid__item-title>a,
+.text-grid--light .text-grid__item-title > a,
 .thumb-list__item-name {
     font-family: Helvetica, Arial, sans-serif;
 }
 
 /* END FONT STYLES */
-
 
 </style>
    <!-- SCID: {FD0EBF78-EF46-4BA5-8F0A-BAA3C8EE3D06}-->
