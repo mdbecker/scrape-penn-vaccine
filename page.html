@@ -939,6 +939,26 @@ START 911 message box (see 'make an appointment' page)
 }
 /* ---------------------------------------------
 END 911 message box (see 'make an appointment' page)
+---------------------------------------------
+START Video Link overrides
+-------------------------------------------- */
+/* use new image, changing dimensions for new image, orienting image to accommodate hover effect  */
+    .icon-rtf-video a:after,
+    a.icon-rtf-video:after {
+        background-image: url(/-/media/images/template-images/icons/video-icon);
+        background-size: 19px;
+        height: 16px;
+        background-repeat: no-repeat;
+        padding-right: 23px;
+        background-position: top right;
+    }
+/* changing background image position for hover effect  */
+    .icon-rtf-video a:hover:after,
+    a.icon-rtf-video:hover:after {
+        background-position: bottom right;
+    }
+/* ---------------------------------------------
+END Video Link overrides
 -------------------------------------------- */
 
 /* TEMP STYLES TO CHANGE FONT TO DEFAULT OS SYSTEM FONTS */
@@ -1282,23 +1302,7 @@ blockquote p {
 .thumb-list__item-name {
     font-family: Helvetica, Arial, sans-serif;
 }
-/* END FONT STYLES */
-
-/* Video Link overrides */
-
-    .icon-rtf-video a:after,
-    a.icon-rtf-video:after {
-        background-image: url(/-/media/images/template-images/icons/video-icon);
-        background-size: 19px;
-        height: 16px;
-        background-repeat: no-repeat;
-        padding-right: 23px;
-        background-position: top right;
-    }
-    .icon-rtf-video a:hover:after,
-    a.icon-rtf-video:hover:after {
-        background-position: bottom right;
-    }
+/* END -- TEMP STYLES TO CHANGE FONT TO DEFAULT OS SYSTEM FONTS */
 </style>
    <!-- SCID: {FD0EBF78-EF46-4BA5-8F0A-BAA3C8EE3D06}-->
 
