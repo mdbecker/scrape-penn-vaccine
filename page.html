@@ -67,16 +67,16 @@ body .content-wrap.js-content-wrap.cf .l-global-alert:nth-of-type(2) {
 }
 /*OneTrust Cookie Modal overrides*/
 #ot-pc-title{
-	font-weight:bold !important;
+    font-weight:bold !important;
 }
 .ot-cat-grp p {
-	font-weight:bold !important;
-	font-size:14px !important;
+    font-weight:bold !important;
+    font-size:14px !important;
 }
 #onetrust-pc-sdk #ot-pvcy-hdr,#onetrust-pc-sdk.ot-tgl-with-label .ot-cat-header{
-	font-size:14px !important;
-	max-width:60% !important;
-	display:inline-block !important;
+    font-size:14px !important;
+    max-width:60% !important;
+    display:inline-block !important;
         font-weight:bold !important;
 }
 /*END OneTrust Cookie Modal overrides*/
@@ -625,9 +625,11 @@ div.fad-search__wrapper input::-moz-placeholder {
     /* Firefox 18- */
     color: #fff;
 }
-/* Hides hint bubble if not initial search page ("keyword" is only present in form action on results pages) */
+/* Hides hint bubble if not initial search page ("keyword" and "programid" is only present in form action on results pages) */
 form[action*="keyword"] div.fad-search__wrapper:before,
-form[action*="keyword"] div.fad-search__wrapper:after {
+form[action*="keyword"] div.fad-search__wrapper:after,
+form[action*="programid"] div.fad-search__wrapper:before,
+form[action*="programid"] div.fad-search__wrapper:after  {
     display: none;
 }
 /* --------------------------------------------
